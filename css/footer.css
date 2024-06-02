@@ -130,6 +130,7 @@
 .footer__logo {
   height: 172px;
   width: 193px;
+  display: none;
 }
 
 .footer__copyright {
@@ -198,6 +199,7 @@
   }
 
   .footer__logo {
+    display: block;
     height: 324px;
     width: 365px;
     align-self: center;

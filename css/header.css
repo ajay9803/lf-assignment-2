@@ -25,7 +25,6 @@
 }
 
 .header__menu {
-  display: flex;
   height: 12.86px;
   width: 21px;
   justify-content: start;

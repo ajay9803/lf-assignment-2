@@ -36,6 +36,8 @@ const updateTheme = () => {
   switchIcons();
   switchToggleImage();
   switchMovedownButton();
+  toggleMenuIcons();
+  toggleProductBackground();
 };
 
 const switchToggleImage = () => {
@@ -86,8 +88,8 @@ const switchMovedownButton = () => {
   let darkArrow = document.getElementById("dark-arrow");
   let movedownbutton = document.getElementById("move-down-button");
   if (darkMode) {
-    movedownbutton.classList.add('border--light');
-    movedownbutton.classList.remove('border--dark');
+    movedownbutton.classList.add("border--light");
+    movedownbutton.classList.remove("border--dark");
     lightArrow.classList.add("item-display");
     lightArrow.classList.remove("item-display--none");
     darkArrow.classList.add("item-display--none");
@@ -102,11 +104,43 @@ const switchMovedownButton = () => {
   }
 };
 
+const toggleMenuIcons = () => {
+  let darkMenu = document.getElementById("dark-menu");
+  let lightMenu = document.getElementById("light-menu");
+  if (darkMode) {
+    lightMenu.classList.add("item-display");
+    lightMenu.classList.remove("item-display--none");
+    darkMenu.classList.remove("item-display");
+    darkMenu.classList.add("item-display--none");
+  } else {
+    lightMenu.classList.remove("item-display");
+    lightMenu.classList.add("item-display--none");
+    darkMenu.classList.add("item-display");
+    darkMenu.classList.remove("item-display--none");
+  }
+};
+
+const toggleProductBackground = () => {
+  let products = document.querySelectorAll(".product");
+
+  products.forEach((product) => {
+    if (darkMode) {
+      product.classList.remove("product--dark-back");
+      product.classList.add("product--light-back");
+    } else {
+      product.classList.add("product--dark-back");
+      product.classList.remove("product--light-back");
+    }
+  });
+};
+
 document.getElementById("toggle-button").addEventListener("click", toggleTheme);
 updateTheme();
 switchIcons();
 switchToggleImage();
 switchMovedownButton();
+toggleMenuIcons();
+toggleProductBackground();
 
 // resize window event listener
 const handleResize = () => {
