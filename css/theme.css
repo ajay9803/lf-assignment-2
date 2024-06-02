@@ -5,15 +5,8 @@
 }
 
 .top-section--dark {
-  background-color: black;
   color: white;
-  background-image: linear-gradient(
-      to bottom left,
-      #370665 25%,
-      #35589a 50%,
-      black 100%
-    ),
-    radial-gradient(circle at left bottom, #35589a, transparent);
+  background: radial-gradient(circle at 25% 50%, #243960, #101423, #100619 80%);
 }
 
 .bottom-section--dark {
@@ -62,6 +55,7 @@
 .top-section--light {
   background-color: #fafafa;
   color: black;
+  background: radial-gradient(circle at 25% 50%, white, white, white 80%);
 }
 
 .bottom-section--light {

@@ -90,6 +90,7 @@
   width: 25px;
   min-height: 25px;
   min-width: 25px;
+  margin: 3px 0px 3px 5px;
 }
 
 .header__login {
@@ -108,7 +109,6 @@
 }
 
 @media only screen and (min-width: 1024px) {
-
   .side-headers {
     width: 100%;
   }
