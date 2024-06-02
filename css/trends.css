@@ -1,6 +1,6 @@
 .trends {
   width: 100%;
-  padding: 26px 0px 26px 40px;
+  padding: 26px 0px 26px 0px;
 }
 
 .trends__title {
@@ -54,6 +54,7 @@
 .trend-product__features {
   padding-left: 14px;
   padding-bottom: 9px;
+  padding-top: 8px;
 }
 
 .trend-product__feature {
@@ -120,7 +121,7 @@
 
 @media only screen and (min-width: 1024px) {
   .trends {
-    padding: 117px 129px;
+    padding: 117px 129px 0px 129px;
   }
 
   .trends__title {

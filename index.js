@@ -38,6 +38,7 @@ const updateTheme = () => {
   switchMovedownButton();
   toggleMenuIcons();
   toggleProductBackground();
+  // handleResize();
 };
 
 const switchToggleImage = () => {
@@ -63,19 +64,25 @@ const switchIcons = () => {
   let cartDark = document.getElementById("cart-dark");
 
   if (darkMode) {
-    searchLight.classList.add("item-display");
-    searchLight.classList.remove("item-display--none");
-    searchDark.classList.add("item-display--none");
-    searchDark.classList.remove("item-display");
+    if (innerWidth > 1024) {
+      searchLight.classList.add("item-display");
+      searchLight.classList.remove("item-display--none");
+      searchDark.classList.add("item-display--none");
+      searchDark.classList.remove("item-display");
+    }
+
     cartLight.classList.add("item-display");
     cartLight.classList.remove("item-display--none");
     cartDark.classList.add("item-display--none");
     cartDark.classList.remove("item-display");
   } else {
-    searchLight.classList.add("item-display--none");
-    searchLight.classList.remove("item-display");
-    searchDark.classList.add("item-display");
-    searchDark.classList.remove("item-display--none");
+    if (innerWidth > 1024) {
+      searchLight.classList.add("item-display--none");
+      searchLight.classList.remove("item-display");
+      searchDark.classList.add("item-display");
+      searchDark.classList.remove("item-display--none");
+    }
+
     cartLight.classList.add("item-display--none");
     cartLight.classList.remove("item-display");
     cartDark.classList.add("item-display");
@@ -143,6 +150,7 @@ toggleMenuIcons();
 toggleProductBackground();
 
 // resize window event listener
+
 const handleResize = () => {
   console.log("handle resize");
   let searchLight = document.getElementById("search-light");
