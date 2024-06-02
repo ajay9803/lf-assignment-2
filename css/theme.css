@@ -45,6 +45,14 @@
   background-color: black;
 }
 
+.input--noshadow {
+  border: none;
+}
+
+.border--dark {
+  border: 1px solid black;
+}
+
 /* light theme  */
 
 .top-section--light {
@@ -65,6 +73,15 @@
   background-color: #ffffff;
 }
 
+.input--shadow {
+  border: 2px solid #e5e5e5;
+  box-shadow: 0px 5px 5px grey;
+}
+
+.border--light {
+  border: 1px solid white;
+}
+
 /* common theme  */
 
 .item-display {
@@ -72,14 +89,5 @@
 }
 
 .item-display--none {
-  display: none
-}
-
-.input--noshadow {
-  border: none;
-}
-
-.input--shadow {
-  border: 2px solid #e5e5e5;
-  box-shadow: 0px 5px 5px grey;
+  display: none;
 }

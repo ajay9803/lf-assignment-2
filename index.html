@@ -89,8 +89,11 @@
             <div class="explore-section">
                 <!-- down button -->
                 <div class="product--move-down">
-                    <div class="move-down-button">
-                        <img class="move-down-button__arrow" src="images/down-arrow.svg" alt="down-arrow">
+                    <div id="move-down-button" class="move-down-button">
+                        <img id="light-arrow" class="move-down-button__arrow" src="images/down-arrow.svg"
+                            alt="down-arrow">
+                        <img id="dark-arrow" class="move-down-button__arrow" src="images/down-arrow-dark.svg"
+                            alt="down-arrow-dark">
                     </div>
                 </div>
 
@@ -458,40 +461,50 @@
         <!-- footer section -->
         <footer class="footer">
             <div class="footer__top-section">
-                <div class="footer__item-list">
-                    <div class="footer__item">
-                        <p class="footer__item-topic"> Shop</p>
-                        <div class="footer__item-subtopics">
-                            <p class="footer__item-subtopic">Wireless</p>
-                            <p class="footer__item-subtopic"> Headphone</p>
-                            <p class="footer__item-subtopic"> Gaming</p>
-                            <p class="footer__item-subtopic"> Speakers</p>
-                            <p class="footer__item-subtopic"> Soundbars</p>
-                            <p class="footer__item-subtopic"> Professional</p>
-                            <p class="footer__item-subtopic"> Offer Zone</p>
+                <div class="footer__left-section">
+                    <div class="footer__left-top">
+                        <img src="images/musify-logo.svg" alt="musify-logo" class="footer__logo">
+                        <div class="footer__item-list">
+                            <div class="footer__item">
+                                <p class="footer__item-topic"> Shop</p>
+                                <div class="footer__item-subtopics">
+                                    <p class="footer__item-subtopic">Wireless</p>
+                                    <p class="footer__item-subtopic"> Headphone</p>
+                                    <p class="footer__item-subtopic"> Gaming</p>
+                                    <p class="footer__item-subtopic"> Speakers</p>
+                                    <p class="footer__item-subtopic"> Soundbars</p>
+                                    <p class="footer__item-subtopic"> Professional</p>
+                                    <p class="footer__item-subtopic"> Offer Zone</p>
+                                </div>
+                            </div>
+                            <div class="footer__country-item">
+                                <p class="footer__item-topic">Country</p>
+                                <p class="footer__item-topic">India</p>
+                            </div>
+                        </div>
+
+                        <div class="footer__item">
+                            <p class="footer__item-topic"> Support</p>
+                            <div class="footer__item-subtopics">
+                                <p class="footer__item-subtopic">Order Status</p>
+                                <p class="footer__item-subtopic"> Bulk Purchase Program</p>
+                                <p class="footer__item-subtopic"> Buy Authentic</p>
+                                <p class="footer__item-subtopic"> Product Support</p>
+                                <p class="footer__item-subtopic"> Shipping & Delivery Policy</p>
+                                <p class="footer__item-subtopic"> Cancellation and Return Policy</p>
+                                <p class="footer__item-subtopic"> Service Center</p>
+                                <p class="footer__item-subtopic"> Brand Shoes</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer__country-item">
-                        <p class="footer__item-topic">Country</p>
-                        <p class="footer__item-topic">India</p>
+                    <div class="footer__subscribe-item-duplicate">
+                        <p class="footer__item-topic"> Subscribe to our News letter</p>
+                        <div class="footer__form">
+                            <input placeholder="Enter your mail id" class="footer__input">
+                            <button class="footer__button"> Subscribe</button>
+                        </div>
                     </div>
                 </div>
-
-                <div class="footer__item">
-                    <p class="footer__item-topic"> Support</p>
-                    <div class="footer__item-subtopics">
-                        <p class="footer__item-subtopic">Order Status</p>
-                        <p class="footer__item-subtopic"> Bulk Purchase Program</p>
-                        <p class="footer__item-subtopic"> Buy Authentic</p>
-                        <p class="footer__item-subtopic"> Product Support</p>
-                        <p class="footer__item-subtopic"> Shipping & Delivery Policy</p>
-                        <p class="footer__item-subtopic"> Cancellation and Return Policy</p>
-                        <p class="footer__item-subtopic"> Service Center</p>
-                        <p class="footer__item-subtopic"> Brand Shoes</p>
-                    </div>
-                </div>
-
-
 
                 <div class="footer__item-list">
                     <div class="footer__item">
@@ -543,9 +556,8 @@
                         <button class="footer__button"> Subscribe</button>
                     </div>
                 </div>
-
-                <img src="images/musify-logo.svg" alt="musify-logo" class="footer__logo">
             </div>
+            <img src="images/musify-logo.svg" alt="musify-logo" class="footer__logo-duplicate">
             <p class="footer__copyright">© 2022.Musify.All Rights Reserved</p>
         </footer>
     </div>

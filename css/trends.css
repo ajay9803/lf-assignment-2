@@ -129,6 +129,10 @@
     font-weight: 700;
   }
 
+  .trends__item-list {
+    column-gap: 124px;
+  }
+
   .trends-product__img {
     width: 376px;
     height: 331px;

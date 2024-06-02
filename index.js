@@ -35,6 +35,7 @@ const updateTheme = () => {
 
   switchIcons();
   switchToggleImage();
+  switchMovedownButton();
 };
 
 const switchToggleImage = () => {
@@ -80,10 +81,32 @@ const switchIcons = () => {
   }
 };
 
+const switchMovedownButton = () => {
+  let lightArrow = document.getElementById("light-arrow");
+  let darkArrow = document.getElementById("dark-arrow");
+  let movedownbutton = document.getElementById("move-down-button");
+  if (darkMode) {
+    movedownbutton.classList.add('border--light');
+    movedownbutton.classList.remove('border--dark');
+    lightArrow.classList.add("item-display");
+    lightArrow.classList.remove("item-display--none");
+    darkArrow.classList.add("item-display--none");
+    darkArrow.classList.remove("item-display");
+  } else {
+    movedownbutton.classList.remove("border--light");
+    movedownbutton.classList.add("border--dark");
+    lightArrow.classList.add("item-display--none");
+    lightArrow.classList.remove("item-display");
+    darkArrow.classList.add("item-display");
+    darkArrow.classList.remove("item-display--none");
+  }
+};
+
 document.getElementById("toggle-button").addEventListener("click", toggleTheme);
 updateTheme();
 switchIcons();
 switchToggleImage();
+switchMovedownButton();
 
 // resize window event listener
 const handleResize = () => {

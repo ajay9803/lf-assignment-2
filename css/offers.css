@@ -44,6 +44,7 @@
   line-height: 36.54px;
   letter-spacing: 0.02em;
   text-align: center;
+  color: white;
 }
 
 .offer-section__timer {
@@ -117,6 +118,7 @@
   background-color: transparent;
   border: 3px solid #f14a16;
   color: #f14a16;
+  text-align: center;
 }
 
 .offers-section__button-1 {
