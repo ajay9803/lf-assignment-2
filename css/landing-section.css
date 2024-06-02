@@ -101,6 +101,7 @@
   border: none;
   background-color: transparent;
   border: 3px solid #f14a16;
+  box-shadow: 0 0 10px #f14a16;
   box-shadow: none;
 }
 
@@ -253,6 +254,22 @@
     width: auto;
   }
 
+  .explore__title {
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+
+  .explore__description {
+    font-size: 32px;
+    font-weight: 250;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+
   .explore-section {
     width: 100%;
     display: flex;
@@ -301,5 +318,24 @@
     right: 0px;
     z-index: 1;
     width: 50%;
+  }
+
+  .explore__button {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.23px;
+    letter-spacing: 0.04em;
+  }
+
+  .right-button__text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.23px;
+    letter-spacing: 0.04em;
+  }
+
+  .right-button__icon {
+    height: 30px;
+    width: 30px;
   }
 }

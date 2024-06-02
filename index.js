@@ -12,7 +12,7 @@ const updateTheme = () => {
   const topSection = document.getElementById("top-section");
   const bottomSection = document.getElementById("bottom-section");
   const toggleButton = document.getElementById("toggle-button-1");
-  const input = document.getElementById('search-input');
+  const input = document.getElementById("search-input");
   if (darkMode) {
     topSection.classList.add("top-section--dark");
     topSection.classList.remove("top-section--light");
@@ -20,8 +20,8 @@ const updateTheme = () => {
     bottomSection.classList.remove("bottom-section--light");
     toggleButton.classList.add("background--dark");
     toggleButton.classList.remove("background--light");
-    input.classList.remove('input--shadow');
-    input.classList.add('input--noshadow');
+    input.classList.remove("input--shadow");
+    input.classList.add("input--noshadow");
   } else {
     topSection.classList.add("top-section--light");
     topSection.classList.remove("top-section--dark");
@@ -30,7 +30,7 @@ const updateTheme = () => {
     toggleButton.classList.add("background--light");
     toggleButton.classList.remove("background--dark");
     input.classList.add("input--shadow");
-    input.classList.remove('input--noshadow');
+    input.classList.remove("input--noshadow");
   }
 
   switchIcons();
@@ -83,4 +83,31 @@ const switchIcons = () => {
 document.getElementById("toggle-button").addEventListener("click", toggleTheme);
 updateTheme();
 switchIcons();
-switchToggleImage()
+switchToggleImage();
+
+// resize window event listener
+const handleResize = () => {
+  console.log("handle resize");
+  let searchLight = document.getElementById("search-light");
+  let searchDark = document.getElementById("search-dark");
+  if (innerWidth > 1024) {
+    if (darkMode) {
+      searchDark.classList.remove("item-display");
+      searchDark.classList.add("item-display--none");
+      searchLight.classList.remove("item-display--none");
+      searchLight.classList.add("item-display");
+    } else {
+      searchDark.classList.remove("item-display--none");
+      searchDark.classList.add("item-display");
+      searchLight.classList.remove("item-display");
+      searchLight.classList.add("item-display--none");
+    }
+  } else {
+    searchDark.classList.add("item-display--none");
+    searchDark.classList.remove("item-display");
+    searchLight.classList.remove("item-display");
+    searchLight.classList.add("item-display--none");
+  }
+};
+
+window.addEventListener("resize", handleResize);

@@ -54,10 +54,10 @@
   height: 30px;
   width: 30px;
 }
-
+/* 
 .header__search-img {
   display: none;
-}
+} */
 
 .header__theme-toggle {
   display: flex;
@@ -133,10 +133,6 @@
     justify-content: start;
   }
 
-  .header__img {
-    display: inline;
-  }
-
   .header__menubar {
     display: flex;
     justify-content: end;
@@ -155,9 +151,4 @@
     height: 145px;
     width: 145px;
   }
-
-  .header__search-img {
-    display: inline;
-  }
 }
-
