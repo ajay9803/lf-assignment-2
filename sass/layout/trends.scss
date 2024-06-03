@@ -29,7 +29,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-      background: #f14a16;
+      background: $primary-color;
       border-radius: 10px;
     }
   }
@@ -96,14 +96,14 @@
     border-radius: 20px;
     border: none;
     color: #e5e5e5;
-    background-color: #f14a16;
+    background-color: $primary-color;
     font-size: 10px;
     font-weight: 700;
     line-height: 12px;
     letter-spacing: 0.04em;
     padding: 7px 0px;
-    box-shadow: 0 0 10px #f14a16;
-    border: 3px solid #f14a16;
+    box-shadow: 0 0 10px $primary-color;
+    border: 3px solid $primary-color;
     cursor: pointer;
     @include normal-transition;
 
@@ -121,7 +121,7 @@
     border-radius: 20px;
     border: none;
     background-color: transparent;
-    border: 3px solid #f14a16;
+    border: 3px solid $primary-color;
     box-shadow: none;
   }
   &__right-button-icon {
@@ -130,7 +130,7 @@
   }
 
   &__right-button-text {
-    color: #f14a16;
+    color: $primary-color;
     font-size: 10px;
     font-weight: 700;
     line-height: 12px;
@@ -197,7 +197,7 @@
       border-radius: 20px;
       border: none;
       background-color: transparent;
-      border: 3px solid #f14a16;
+      border: 3px solid $primary-color;
       box-shadow: none;
     }
     &__right-button-icon {
@@ -206,7 +206,7 @@
     }
 
     &__right-button-text {
-      color: #f14a16;
+      color: $primary-color;
       font-size: 16px;
       line-height: 19px;
     }

@@ -1,4 +1,4 @@
-// dark mode actions
+// toggle theme
 
 let darkMode = true;
 
@@ -33,15 +33,12 @@ const updateTheme = () => {
 document.getElementById("toggle-button").addEventListener("click", toggleTheme);
 updateTheme();
 
-// menu bar actions
+// toggle menu-pop-up
 
 let showMenuBar = false;
 
-console.log('show menu bar is', showMenuBar);
-
 const toggleMenuBar = () => {
   showMenuBar = !showMenuBar;
-  console.log("menu button cliked");
   let popUpMenu = document.getElementById("menu-pop-up");
   let darkWrapper = document.getElementById("dark-wrapper");
   if (showMenuBar) {
@@ -60,12 +57,10 @@ const toggleMenuBar = () => {
 document.getElementById("menu-button").addEventListener("click", toggleMenuBar);
 
 addEventListener("resize", () => {
-  console.log("here");
   let popUpMenu = document.getElementById("menu-pop-up");
   let darkWrapper = document.getElementById("dark-wrapper");
   if (innerWidth > 1024) {
     showMenuBar = false;
-    console.log(showMenuBar, "is false");
     popUpMenu.classList.remove("item-display");
     popUpMenu.classList.add("item-display--none");
     darkWrapper.classList.remove("item-display");
@@ -73,6 +68,12 @@ addEventListener("resize", () => {
   }
 });
 
-// document
-//   .getElementById("dark-wrapper")
-//   .addEventListener("click", toggleMenuBar);
+document
+  .getElementById("dark-wrapper")
+  .addEventListener("click", toggleMenuBar);
+
+const elements = document.querySelectorAll("#menu-pop-up-item");
+
+elements.forEach((element) => {
+  element.addEventListener("click", toggleMenuBar);
+});
