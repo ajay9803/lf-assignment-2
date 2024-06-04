@@ -20,25 +20,25 @@
   .menu-pop-up {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
     row-gap: 20px;
-    border-radius: 10px;
-    padding: 0px 25px;
     z-index: 3;
-    background-color: $primary-color;
-    color: $primary-light-text-color;
-    position: absolute;
-    top: 60px;
+    padding-top: 30px;
+    color: inherit;
+    position: fixed;
+    top: 0px;
     left: 0px;
+    height: 100%;
+    width: 200px;
     overflow: hidden;
-
     transition: all 1s ease;
 
     &__item {
       cursor: pointer;
       color: inherit;
       text-decoration: none;
+      font-weight: bold;
 
       &:hover {
         text-decoration: underline;

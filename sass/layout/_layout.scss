@@ -61,14 +61,18 @@
   }
 
   .pop-up-close {
-    height: 0px;
+    transform: translateX(-100%);
   }
 
   .pop-up-view {
-    height: 152px;
+    transform: translateX(0px);
   }
 
   &__dark {
+    .menu-background {
+      background-color: $primary-dark-background;
+    }
+
     .search-icon {
       display: none;
     }
@@ -161,8 +165,16 @@
   // light theme
 
   &__light {
+    .menu-background {
+      background-color: $primary-light-background;
+    }
+
     .blur-gradient {
-        background-image: linear-gradient(to top, $primary-light-background, transparent);
+      background-image: linear-gradient(
+        to top,
+        $primary-light-background,
+        transparent
+      );
     }
 
     .search-icon {
