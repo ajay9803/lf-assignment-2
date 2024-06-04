@@ -38,7 +38,7 @@
   display: none;
 }
 .body__dark .blur-gradient {
-  background-image: linear-gradient(to top, #000000, transparent);
+  background-image: linear-gradient(to top, #100619, transparent);
 }
 @media only screen and (min-width: 1024px) {
   .body__dark .search-icon {
@@ -286,6 +286,7 @@
   box-shadow: 0px 0px 5px black;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 .header__toggle-circle {
   height: 21px;
@@ -1149,7 +1150,7 @@
 }
 .values-section__title {
   padding: 30px 47px 19px 47px;
-  text-align: center;
+  text-align: start;
   font-size: clamp(24px, 4vw, 45px);
   font-weight: 700;
   line-height: 29px;
@@ -1157,11 +1158,14 @@
 .values-section__features {
   display: flex;
   flex-direction: column;
-  padding: 16px 64px 33px 64px;
+  align-items: start;
+  padding: 16px 20px 33px 20px;
   row-gap: 74px;
+  column-gap: 10px;
 }
 .values-section__feature {
   display: flex;
+  justify-content: center;
   align-items: center;
   column-gap: 8px;
 }
@@ -1170,7 +1174,7 @@
   width: clamp(30px, 4vw, 40px);
 }
 .values-section__feature-title {
-  font-size: clamp(20px, 4vw, 36px);
+  font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -1194,8 +1198,10 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
   }
   .values-section__feature-title {
+    font-size: 24px;
     font-weight: 400;
     line-height: 43.85px;
     letter-spacing: 0.03em;
@@ -1462,7 +1468,6 @@
 }
 .explore__description {
   font-size: 18px;
-  color: #a4a4a4;
   font-weight: 250;
   line-height: 40x;
   letter-spacing: 2px;
@@ -1705,10 +1710,9 @@
     bottom: 130px;
     right: 0;
     width: 50%;
-    box-shadow: 0 0 8px 8px red none;
   }
   .blurred__bottom {
-    height: 150px;
+    height: 50px;
     width: 50%;
     position: absolute;
     right: 0;

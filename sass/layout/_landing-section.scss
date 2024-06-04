@@ -62,7 +62,6 @@
 
   &__description {
     font-size: 18px;
-    color: #a4a4a4;
     font-weight: 250;
     line-height: 40x;
     letter-spacing: 2px;
@@ -329,11 +328,10 @@
     bottom: 130px;
     right: 0;
     width: 50%;
-    box-shadow: 0 0 8px 8px red none;
   }
 
   .blurred__bottom {
-    height: 150px;
+    height: 50px;
     width: 50%;
     position: absolute;
     right: 0;

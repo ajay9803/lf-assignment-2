@@ -10,7 +10,7 @@
 
   &__title {
     padding: 30px 47px 19px 47px;
-    text-align: center;
+    text-align: start;
     font-size: clamp(24px, 4vw, 45px);
     font-weight: 700;
     line-height: 29px;
@@ -19,11 +19,15 @@
   &__features {
     display: flex;
     flex-direction: column;
-    padding: 16px 64px 33px 64px;
+    align-items: start;
+    padding: 16px 20px 33px 20px;
     row-gap: 74px;
+    column-gap: 10px;
   }
+
   &__feature {
     display: flex;
+    justify-content: center;
     align-items: center;
     column-gap: 8px;
 
@@ -33,7 +37,7 @@
     }
 
     &-title {
-      font-size: clamp(20px, 4vw, 36px);
+      font-size: 20px;
       font-weight: 400;
       line-height: 24px;
       letter-spacing: 0.03em;
@@ -61,10 +65,11 @@
       flex-direction: row;
       width: 100%;
       justify-content: space-between;
+      align-items: center;
     }
 
-
     &__feature-title {
+      font-size: 24px;
       font-weight: 400;
       line-height: 43.85px;
       letter-spacing: 0.03em;
