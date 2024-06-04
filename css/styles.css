@@ -23,7 +23,7 @@
     display: inline;
     height: 30px;
     width: 30px;
-    background-image: url("../../images/icons/search-light.svg");
+    background-image: url("../images/icons/search-light.svg");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -34,7 +34,7 @@
   cursor: pointer;
   height: 30px;
   width: 30px;
-  background-image: url("../../images/icons/cart-icon.svg");
+  background-image: url("../images/icons/cart-icon.svg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -61,7 +61,7 @@
   cursor: pointer;
   height: 20px;
   width: 21px;
-  background-image: url("../../images/icons/menu.svg");
+  background-image: url("../images/icons/menu.svg");
   background-repeat: no-repeat;
   background-position-x: start;
   background-position-y: center;
@@ -71,7 +71,7 @@
 }
 .body__dark .move-down {
   cursor: pointer;
-  background-image: url("../../images/icons/down-arrow.svg");
+  background-image: url("../images/icons/down-arrow.svg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -87,7 +87,7 @@
     display: inline;
     height: 30px;
     width: 30px;
-    background-image: url("../../images/icons/search-dark.svg");
+    background-image: url("../images/icons/search-dark.svg");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -98,7 +98,7 @@
   cursor: pointer;
   height: 30px;
   width: 30px;
-  background-image: url("../../images/icons/cart-dark.svg");
+  background-image: url("../images/icons/cart-dark.svg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -125,7 +125,7 @@
   cursor: pointer;
   height: 20px;
   width: 21px;
-  background-image: url("../../images/icons/menu-dark.svg");
+  background-image: url("../images/icons/menu-dark.svg");
   background-repeat: no-repeat;
   background-position-x: start;
   background-position-y: center;
@@ -136,7 +136,7 @@
 }
 .body__light .move-down {
   cursor: pointer;
-  background-image: url("../../images/icons/down-arrow-dark.svg");
+  background-image: url("../images/icons/down-arrow-dark.svg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -419,6 +419,7 @@
 .footer__item-image {
   height: 29px;
   width: 28px;
+  cursor: pointer;
 }
 .footer__form {
   width: 100%;
@@ -662,6 +663,7 @@
   gap: 0px;
   border-radius: 50px;
   background-color: #370665;
+  cursor: pointer;
 }
 .arrivals-product__img {
   height: 322px;
@@ -844,6 +846,8 @@
   border-radius: 25px;
   border: 2px solid white;
   object-fit: cover;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1130,6 +1134,7 @@
   flex-direction: column;
   gap: 0px;
   border-radius: 50px;
+  cursor: pointer;
 }
 .trends-product__img {
   height: 220px;
@@ -1449,6 +1454,7 @@
   border-radius: 25px;
   position: relative;
   color: white;
+  cursor: pointer;
 }
 .product__image {
   position: absolute;
