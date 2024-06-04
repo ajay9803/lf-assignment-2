@@ -1,5 +1,49 @@
+@font-face {
+  font-family: "proxima_nova_rgregular";
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima_nova_rgbold";
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "adelle_rgregular";
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .body {
-  font-family: "Outfit", sans-serif;
+   font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
 
   .item-display {
     display: flex;
@@ -18,24 +62,21 @@
   }
 
   &__dark {
-
     .search-icon {
       display: none;
     }
     @media only screen and (min-width: 1024px) {
-
-    .search-icon {
-      z-index: 1;
-      cursor: pointer;
-      display: inline;
-      height: 30px;
-      width: 30px;
-      background-image: url("../images/icons/search-light.svg");
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: center;
-    }
-      
+      .search-icon {
+        z-index: 1;
+        cursor: pointer;
+        display: inline;
+        height: 30px;
+        width: 30px;
+        background-image: url("../images/icons/search-light.svg");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
     }
 
     .cart-icon {
@@ -51,7 +92,7 @@
     }
 
     .input-background {
-      background-color: #F8F8F8;
+      background-color: #f8f8f8;
     }
 
     .trends-product-background {
@@ -77,7 +118,7 @@
     }
 
     .menu {
-     cursor: pointer;
+      cursor: pointer;
       height: 20px;
       width: 21px;
       background-image: url("../images/icons/menu.svg");
@@ -105,27 +146,24 @@
     }
   }
 
-  // light theme 
+  // light theme
 
   &__light {
-
     .search-icon {
       display: none;
     }
     @media only screen and (min-width: 1024px) {
-
-    .search-icon {
-      z-index: 1;
-      cursor: pointer;
-      display: inline;
-      height: 30px;
-      width: 30px;
-      background-image: url("../images/icons/search-dark.svg");
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: center;
-    }
-      
+      .search-icon {
+        z-index: 1;
+        cursor: pointer;
+        display: inline;
+        height: 30px;
+        width: 30px;
+        background-image: url("../images/icons/search-dark.svg");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
     }
 
     .cart-icon {
@@ -163,7 +201,7 @@
     }
 
     .menu {
-     cursor: pointer;
+      cursor: pointer;
       height: 20px;
       width: 21px;
       background-image: url("../images/icons/menu-dark.svg");
