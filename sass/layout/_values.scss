@@ -27,6 +27,11 @@
     align-items: center;
     column-gap: 8px;
 
+    &-icon {
+      height: clamp(30px, 4vw, 40px);
+      width: clamp(30px, 4vw, 40px);
+    }
+
     &-title {
       font-size: clamp(20px, 4vw, 36px);
       font-weight: 400;

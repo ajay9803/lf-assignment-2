@@ -1152,6 +1152,10 @@
   align-items: center;
   column-gap: 8px;
 }
+.values-section__feature-icon {
+  height: clamp(30px, 4vw, 40px);
+  width: clamp(30px, 4vw, 40px);
+}
 .values-section__feature-title {
   font-size: clamp(20px, 4vw, 36px);
   font-weight: 400;
