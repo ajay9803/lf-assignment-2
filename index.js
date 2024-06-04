@@ -87,6 +87,8 @@ document.getElementById("move-down-button").addEventListener("click", () => {
   scrollToSection("bottom-section");
 });
 
+
+
 const updateTimer = () => {
   var hoursElement = document.getElementById("hours");
   var minutesElement = document.getElementById("minutes");

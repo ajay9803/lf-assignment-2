@@ -46,11 +46,13 @@
   }
 
   &__image-details {
+    width: 50%;
     position: relative;
   }
 
   &__image {
-    width: 370px;
+    min-width: 370px;
+    flex: 1;
     height: 370px;
   }
 
@@ -83,7 +85,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 50%;
     margin: 46px 51px 67px 51px;
   }
 
@@ -151,6 +153,7 @@
   @media only screen and (min-width: 1024px) {
     & {
       flex-direction: row;
+      
       margin: 0px 189px 193px 189px;
     }
     &__title {
