@@ -1295,7 +1295,6 @@
   .trends-product__img-wrap {
     width: 376px;
     height: 331px;
-    overflow: hidden;
     border-radius: 50px 50px 0px 0px;
   }
   .trends-product__img {
