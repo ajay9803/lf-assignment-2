@@ -1011,7 +1011,7 @@
   flex-direction: column;
   align-items: center;
   width: 50%;
-  margin: 46px 51px 67px 51px;
+  margin: 46px 51px 0px 51px;
 }
 .offers-section__timer-title {
   font-size: 36px;
