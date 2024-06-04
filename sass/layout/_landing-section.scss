@@ -326,10 +326,18 @@
   .hero-model__image {
     display: flex;
     position: absolute;
-    bottom: 0;
+    bottom: 130px;
     right: 0;
     width: 50%;
-    // height: 70%;
+    box-shadow: 0 0 8px 8px red none;
+  }
+
+  .blurred__bottom {
+    height: 150px;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 130px;
   }
 
   .explore__button {

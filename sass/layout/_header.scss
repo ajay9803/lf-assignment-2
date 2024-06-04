@@ -199,7 +199,13 @@
   justify-content: end;
   z-index: 1;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) and (max-width: 1224px) {
+    & {
+      column-gap: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 1224px) {
     & {
       width: 100%;
       column-gap: 88px;
