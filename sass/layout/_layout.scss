@@ -43,14 +43,13 @@
 }
 
 .body {
-   font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
 
   .item-display {
     display: flex;
-  }
-
-  .item-display--none {
-    display: none;
+    &--none {
+      display: none;
+    }
   }
 
   .card--border {

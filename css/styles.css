@@ -571,7 +571,7 @@
 }
 
 .share-section {
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0px 18px 123px 18px;
   background: linear-gradient(91.42deg, #370665 0%, #35589a 100%);
   border-radius: 25px;
@@ -686,11 +686,21 @@
   background-color: #370665;
   cursor: pointer;
 }
+.arrivals-product__img-wrap {
+  height: 322px;
+  width: 325px;
+  border-radius: 46px 46px 0px 0px;
+  overflow: hidden;
+}
 .arrivals-product__img {
   height: 322px;
   width: 325px;
   border-radius: 46px 46px 0px 0px;
   object-fit: cover;
+  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+}
+.arrivals-product__img:hover {
+  transform: scale(1.2);
 }
 .arrivals-product__bottom-section {
   color: #ffffff;
@@ -793,6 +803,11 @@
   .arrivals__item-list {
     column-gap: 106px;
   }
+  .arrivals-product__img-wrap {
+    width: 501px;
+    height: 414px;
+    overflow: hidden;
+  }
   .arrivals-product__img {
     width: 501px;
     height: 414px;
@@ -860,6 +875,11 @@
   width: 100%;
   row-gap: 15px;
 }
+.accessories__image-wrap {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+}
 .accessories__image {
   height: 211px;
   width: 100%;
@@ -869,6 +889,10 @@
   object-fit: cover;
   cursor: pointer;
   overflow: hidden;
+  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+}
+.accessories__image:hover {
+  transform: scale(1.2);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -892,9 +916,13 @@
     flex-direction: row;
     column-gap: 30px;
   }
+  .accessories__image-wrap {
+    display: 50%;
+    border-radius: 25px;
+  }
   .accessories__image {
     height: 400px;
-    width: 50%;
+    width: 100%;
     flex: 1;
     object-fit: cover;
     border-radius: 25px;
@@ -1157,11 +1185,21 @@
   border-radius: 50px;
   cursor: pointer;
 }
+.trends-product__img-wrap {
+  height: 220px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 50px 50px 0px 0px;
+}
 .trends-product__img {
   height: 220px;
   width: 250px;
   border-radius: 50px 50px 0px 0px;
   object-fit: cover;
+  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+}
+.trends-product__img:hover {
+  transform: scale(1.25);
 }
 .trends-product__bottom-section {
   border-radius: 0px 0px 50px 50px;
@@ -1253,6 +1291,12 @@
   }
   .trends__item-list {
     column-gap: 124px;
+  }
+  .trends-product__img-wrap {
+    width: 376px;
+    height: 331px;
+    overflow: hidden;
+    border-radius: 50px 50px 0px 0px;
   }
   .trends-product__img {
     width: 376px;

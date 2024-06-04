@@ -1,4 +1,4 @@
-// Styles for small devices
+// styles for small devices
 .arrivals {
   width: 100%;
   padding: 0px 0px 0px 18px;
@@ -46,11 +46,21 @@
     background-color: #370665;
     cursor: pointer;
 
+    &__img-wrap {
+      height: 322px;
+      width: 325px;
+      border-radius: 46px 46px 0px 0px;
+      overflow: hidden;
+    }
+
     &__img {
       height: 322px;
       width: 325px;
       border-radius: 46px 46px 0px 0px;
       object-fit: cover;
+      @include normal-transition;
+
+      @include hover-scale(1.2);
     }
 
     &__bottom-section {
@@ -119,7 +129,6 @@
       cursor: pointer;
       @include normal-transition;
       &:hover {
-        
         transform: translateX(8px);
         background-color: black;
         opacity: 0.9;
@@ -152,7 +161,7 @@
   }
 }
 
-// Styles for large devices
+// styles for large devices
 @media only screen and (min-width: 1024px) {
   .arrivals {
     padding-left: 129px;
@@ -170,6 +179,12 @@
     }
 
     &-product {
+      &__img-wrap {
+        width: 501px;
+        height: 414px;
+        overflow: hidden;
+      }
+
       &__img {
         width: 501px;
         height: 414px;

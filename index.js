@@ -72,8 +72,4 @@ document
   .getElementById("dark-wrapper")
   .addEventListener("click", toggleMenuBar);
 
-const elements = document.querySelectorAll("#menu-pop-up-item");
-
-elements.forEach((element) => {
-  element.addEventListener("click", toggleMenuBar);
-});
+document.getElementById("menu-pop-up").addEventListener("click", toggleMenuBar);

@@ -27,6 +27,12 @@
     row-gap: 15px;
   }
 
+  &__image-wrap {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
   &__image {
     height: 211px;
     width: 100%;
@@ -36,6 +42,9 @@
     object-fit: cover;
     cursor: pointer;
     overflow: hidden;
+    @include normal-transition;
+
+    @include hover-scale(1.2);
   }
 }
 
@@ -64,9 +73,14 @@
       column-gap: 30px;
     }
 
+    &__image-wrap {
+      display: 50%;
+      border-radius: 25px;
+    }
+
     &__image {
       height: 400px;
-      width: 50%;
+      width: 100%;
       flex: 1;
       object-fit: cover;
       border-radius: 25px;
