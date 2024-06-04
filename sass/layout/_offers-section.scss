@@ -47,13 +47,16 @@
 
   &__image-details {
     width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image-wrap {
     position: relative;
   }
 
   &__image {
-    min-width: 370px;
-    flex: 1;
-    height: 370px;
+    flex: 1 1 300px;
   }
 
   &__min-details {
@@ -153,7 +156,7 @@
   @media only screen and (min-width: 1024px) {
     & {
       flex-direction: row;
-      
+
       margin: 0px 189px 193px 189px;
     }
     &__title {
