@@ -73,3 +73,16 @@ document
   .addEventListener("click", toggleMenuBar);
 
 document.getElementById("menu-pop-up").addEventListener("click", toggleMenuBar);
+
+// scroll to bottom section
+
+const scrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+document.getElementById("move-down-button").addEventListener("click", () => {
+  scrollToSection("bottom-section");
+});
