@@ -71,7 +71,6 @@
   border: none;
 }
 .body__dark .toggle-position {
-  right: 7px;
   cursor: pointer;
 }
 .body__dark .toggle-background {
@@ -139,7 +138,7 @@
   box-shadow: 0px 5px 5px grey;
 }
 .body__light .toggle-position {
-  left: 7px;
+  transform: translateX(-30px);
   cursor: pointer;
 }
 .body__light .menu {
@@ -277,6 +276,8 @@
   border-radius: 50%;
   background-color: #888888;
   position: absolute;
+  right: 7px;
+  transition: transform 0.4s ease;
 }
 .header__toggle-img {
   height: 35px;

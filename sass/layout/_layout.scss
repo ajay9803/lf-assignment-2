@@ -107,7 +107,6 @@
     }
 
     .toggle-position {
-      right: 7px;
       cursor: pointer;
     }
 
@@ -195,7 +194,7 @@
     }
 
     .toggle-position {
-      left: 7px;
+      transform: translateX(-30px);
       cursor: pointer;
     }
 

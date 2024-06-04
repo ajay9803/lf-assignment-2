@@ -86,3 +86,39 @@ const scrollToSection = (sectionId) => {
 document.getElementById("move-down-button").addEventListener("click", () => {
   scrollToSection("bottom-section");
 });
+
+const updateTimer = () => {
+  var hoursElement = document.getElementById("hours");
+  var minutesElement = document.getElementById("minutes");
+  var secondsElement = document.getElementById("seconds");
+
+  var hours = parseInt(hoursElement.innerHTML);
+  var minutes = parseInt(minutesElement.innerHTML);
+  var seconds = parseInt(secondsElement.innerHTML);
+
+  seconds--;
+
+  if (seconds < 0) {
+    seconds = 59;
+    minutes--;
+
+    if (minutes < 0) {
+      minutes = 59;
+      hours--;
+
+      if (hours < 0) {
+        clearInterval(timerInterval);
+      }
+    }
+  }
+
+  hoursElement.innerHTML = pad(hours);
+  minutesElement.innerHTML = pad(minutes);
+  secondsElement.innerHTML = pad(seconds);
+};
+
+const pad = (num) => {
+  return num < 10 ? "0" + num : num;
+};
+
+var timerInterval = setInterval(updateTimer, 1000);

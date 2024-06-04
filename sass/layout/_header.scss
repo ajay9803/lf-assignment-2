@@ -99,6 +99,8 @@
     border-radius: 50%;
     background-color: #888888;
     position: absolute;
+    right: 7px;
+    transition: transform 0.4s ease;
   }
 
   &__toggle-img {
