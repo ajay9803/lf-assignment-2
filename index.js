@@ -42,13 +42,13 @@ const toggleMenuBar = () => {
   let popUpMenu = document.getElementById("menu-pop-up");
   let darkWrapper = document.getElementById("dark-wrapper");
   if (showMenuBar) {
-    popUpMenu.classList.add("item-display");
-    popUpMenu.classList.remove("item-display--none");
+    popUpMenu.classList.add("pop-up-view");
+    popUpMenu.classList.remove("pop-up-close");
     darkWrapper.classList.add("item-display");
     darkWrapper.classList.remove("item-display--none");
   } else {
-    popUpMenu.classList.remove("item-display");
-    popUpMenu.classList.add("item-display--none");
+    popUpMenu.classList.remove("pop-up-view");
+    popUpMenu.classList.add("pop-up-close");
     darkWrapper.classList.remove("item-display");
     darkWrapper.classList.add("item-display--none");
   }
@@ -61,8 +61,8 @@ addEventListener("resize", () => {
   let darkWrapper = document.getElementById("dark-wrapper");
   if (innerWidth > 1024) {
     showMenuBar = false;
-    popUpMenu.classList.remove("item-display");
-    popUpMenu.classList.add("item-display--none");
+    popUpMenu.classList.remove("pop-up-view");
+    popUpMenu.classList.add("pop-up-close");
     darkWrapper.classList.remove("item-display");
     darkWrapper.classList.add("item-display--none");
   }
@@ -87,7 +87,7 @@ document.getElementById("move-down-button").addEventListener("click", () => {
   scrollToSection("bottom-section");
 });
 
-
+// update timer 
 
 const updateTimer = () => {
   var hoursElement = document.getElementById("hours");

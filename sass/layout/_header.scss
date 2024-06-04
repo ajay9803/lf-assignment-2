@@ -18,17 +18,22 @@
   }
 
   .menu-pop-up {
+    display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     row-gap: 20px;
-    padding: 20px 15px;
     border-radius: 10px;
+    padding: 0px 25px;
     z-index: 3;
-    background-color: rgb(26, 24, 24);
+    background-color: $primary-color;
     color: $primary-light-text-color;
     position: absolute;
     top: 60px;
     left: 0px;
+    overflow: hidden;
+
+    transition: all 1s ease;
 
     &__item {
       cursor: pointer;
@@ -67,8 +72,8 @@
 
   &__logo {
     display: flex;
-    height: 60px;
-    width: 60px;
+    height: 90px;
+    width: 90px;
   }
 
   &__actions {

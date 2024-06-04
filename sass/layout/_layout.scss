@@ -60,6 +60,14 @@
     border: 5px solid #35589a;
   }
 
+  .pop-up-close {
+    height: 0px;
+  }
+
+  .pop-up-view {
+    height: 150px;
+  }
+
   &__dark {
     .search-icon {
       display: none;

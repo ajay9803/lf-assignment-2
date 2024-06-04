@@ -34,6 +34,12 @@
 .body .card--default-border {
   border: 5px solid #35589a;
 }
+.body .pop-up-close {
+  height: 0px;
+}
+.body .pop-up-view {
+  height: 150px;
+}
 .body__dark .search-icon {
   display: none;
 }
@@ -221,17 +227,21 @@
   opacity: 0.5;
 }
 .header .menu-pop-up {
+  display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   row-gap: 20px;
-  padding: 20px 15px;
   border-radius: 10px;
+  padding: 0px 25px;
   z-index: 3;
-  background-color: rgb(26, 24, 24);
+  background-color: #F14A16;
   color: #FFFFFF;
   position: absolute;
   top: 60px;
   left: 0px;
+  overflow: hidden;
+  transition: all 1s ease;
 }
 .header .menu-pop-up__item {
   cursor: pointer;
@@ -263,8 +273,8 @@
 }
 .header__logo {
   display: flex;
-  height: 60px;
-  width: 60px;
+  height: 90px;
+  width: 90px;
 }
 .header__actions {
   display: flex;
@@ -528,6 +538,7 @@
   font-weight: 700;
   line-height: 46px;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 .footer__country-item {
   display: none;
