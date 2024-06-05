@@ -1179,7 +1179,7 @@
 }
 .values-section__title {
   padding: 30px 47px 19px 47px;
-  text-align: start;
+  text-align: center;
   font-size: clamp(24px, 4vw, 45px);
   font-weight: 700;
   line-height: 29px;
@@ -1464,7 +1464,7 @@
   border-radius: 30px;
   font-size: 16px;
   width: 100%;
-  color: #858585;
+  color: #000000;
 }
 .search__icon {
   height: 18px;
@@ -1664,6 +1664,56 @@
   background-color: transparent;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .explore {
+    padding: 0px 10px;
+  }
+  .explore__heads {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .explore-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 24px;
+  }
+  .hero-model__image {
+    display: flex;
+    position: absolute;
+    bottom: 130px;
+    right: 0;
+    width: 50%;
+  }
+  .blurred__bottom {
+    height: 50px;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 130px;
+  }
+  .explore-section {
+    width: 100%;
+  }
+  .product--move-down {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    padding: 0px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    position: static;
+  }
+  .explore-items-list {
+    width: 75%;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .search {
     visibility: hidden;
@@ -1683,6 +1733,7 @@
     justify-content: start;
     column-gap: 34px;
     width: auto;
+    z-index: 1;
   }
   .explore__title {
     font-size: 85px;
