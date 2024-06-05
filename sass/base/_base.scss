@@ -1,3 +1,5 @@
+// basic transition effect 
+
 @mixin normal-transition {
   transition: transform 0.4s ease-in, background-color 0.4s ease-in,
     opacity 0.4s ease-in-out;
@@ -7,4 +9,14 @@
   &:hover {
     transform: scale($scale-value);
   }
+}
+
+// background - icon mixin
+
+@mixin background-icon($icon-path) {
+  cursor: pointer;
+  background-image: url($icon-path);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
 }

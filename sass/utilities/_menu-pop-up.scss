@@ -1,0 +1,43 @@
+// pop up menu
+
+.menu-pop-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 20px;
+  z-index: 3;
+  padding-top: 30px;
+  color: inherit;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 250px;
+  overflow: hidden;
+  transition: all 1s ease;
+
+  &__item {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// pop up - open state -> wrapper
+
+.dark-wrapper {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: black;
+  opacity: 0.5;
+}

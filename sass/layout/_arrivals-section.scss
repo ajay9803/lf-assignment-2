@@ -1,4 +1,3 @@
-// styles for small devices
 .arrivals {
   width: 100%;
   padding: 0px 0px 0px 18px;
@@ -23,18 +22,7 @@
     padding-bottom: 20px;
 
     &::-webkit-scrollbar {
-      height: 10px;
-      width: 100%;
-    }
-
-    & ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 2px grey;
-      border-radius: 10px;
-    }
-
-    & ::-webkit-scrollbar-thumb {
-      background: $primary-color;
-      border-radius: 10px;
+      display: none;
     }
   }
 
@@ -161,7 +149,6 @@
   }
 }
 
-// styles for large devices
 @media only screen and (min-width: 1024px) {
   .arrivals {
     padding-left: 129px;

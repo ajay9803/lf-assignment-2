@@ -214,10 +214,13 @@
         column-gap: 20px;
       }
 
+      &__left-section {
+        row-gap: 45px;
+      }
+
       &__logo {
         display: block;
-        height: 324px;
-        width: 365px;
+        width: 30%;
         align-self: center;
       }
 

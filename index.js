@@ -52,7 +52,7 @@ const toggleMenuBar = () => {
     darkWrapper.classList.remove("item-display");
     darkWrapper.classList.add("item-display--none");
   }
-};
+}; 
 
 document.getElementById("menu-button").addEventListener("click", toggleMenuBar);
 
@@ -87,7 +87,7 @@ document.getElementById("move-down-button").addEventListener("click", () => {
   scrollToSection("bottom-section");
 });
 
-// update timer 
+// update timer
 
 const updateTimer = () => {
   var hoursElement = document.getElementById("hours");

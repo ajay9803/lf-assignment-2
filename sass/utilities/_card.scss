@@ -1,0 +1,11 @@
+// card borders 
+
+.card {
+  &-border {
+    border: 1px solid #ffffff;
+
+    &--blue {
+      border: 5px solid #35589a;
+    }
+  }
+}

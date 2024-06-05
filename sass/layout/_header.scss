@@ -6,46 +6,6 @@
   width: 100%;
   padding-right: 24px;
 
-  .dark-wrapper {
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: black;
-    opacity: 0.5;
-  }
-
-  .menu-pop-up {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    row-gap: 20px;
-    z-index: 3;
-    padding-top: 30px;
-    color: inherit;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 200px;
-    overflow: hidden;
-    transition: all 1s ease;
-
-    &__item {
-      cursor: pointer;
-      color: inherit;
-      text-decoration: none;
-      font-weight: bold;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
   &__menu-item {
     display: flex;
     flex: 1;
@@ -83,11 +43,6 @@
     align-items: center;
   }
 
-  &__img {
-    height: 30px;
-    width: 30px;
-  }
-
   &__theme-toggle {
     display: flex;
     flex-direction: row;
@@ -119,17 +74,16 @@
     min-height: 35px;
     min-width: 35px;
     object-fit: cover;
+
+    &--1 {
+      height: 23px;
+      width: 23px;
+      min-height: 23px;
+      min-width: 23px;
+    }
   }
 
-  &__toggle-img-1 {
-    height: 23px;
-    width: 23px;
-    min-height: 23px;
-    min-width: 23px;
-    margin: 3px 0px 3px 5px;
-  }
-
-  &__login {
+  &__login-button {
     display: none;
   }
 
@@ -149,17 +103,13 @@
       padding: 0px 90px;
     }
 
-    &__login {
+    &__login-button {
       display: block;
-      border: 1px solid $primary-color;
       padding: 14px 35px;
-      color: $primary-color;
-      border-radius: 15px;
       font-size: 20px;
       font-weight: 700;
       line-height: 24px;
       letter-spacing: 0.04em;
-      cursor: pointer;
       @include normal-transition;
 
       &:hover {

@@ -1,3 +1,5 @@
+// proxima nova - font family
+
 @font-face {
   font-family: "proxima_nova_rgregular";
   src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
@@ -42,6 +44,8 @@
   font-style: normal;
 }
 
+// main - layout
+
 .body {
   font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
 
@@ -52,14 +56,6 @@
     }
   }
 
-  .card--border {
-    border: 1px solid #ffffff;
-  }
-
-  .card--default-border {
-    border: 5px solid #35589a;
-  }
-
   .pop-up-close {
     transform: translateX(-100%);
   }
@@ -67,6 +63,8 @@
   .pop-up-view {
     transform: translateX(0px);
   }
+
+  // dark theme
 
   &__dark {
     .menu-background {
@@ -84,26 +82,19 @@
     @media only screen and (min-width: 1024px) {
       .search-icon {
         z-index: 1;
-        cursor: pointer;
         display: inline;
         height: 30px;
         width: 30px;
-        background-image: url("../images/icons/search-light.svg");
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
+        @include background-icon("../images/icons/search-light.svg");
       }
     }
 
     .cart-icon {
       z-index: 1;
-      cursor: pointer;
       height: 30px;
       width: 30px;
-      background-image: url("../images/icons/cart-icon.svg");
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: center;
+      @include background-icon("../images/icons/cart-icon.svg");
+
       background-size: cover;
     }
 
@@ -133,13 +124,9 @@
     }
 
     .menu {
-      cursor: pointer;
       height: 20px;
       width: 21px;
-      background-image: url("../images/icons/menu.svg");
-      background-repeat: no-repeat;
-      background-position-x: start;
-      background-position-y: center;
+      @include background-icon("../images/icons/menu.svg");
     }
 
     .product-card {
@@ -153,11 +140,8 @@
     }
 
     .move-down {
-      cursor: pointer;
-      background-image: url("../images/icons/down-arrow.svg");
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: center;
+      @include background-icon("../images/icons/down-arrow.svg");
+
       border: 1px solid $primary-light-text-color;
     }
   }
@@ -180,29 +164,22 @@
     .search-icon {
       display: none;
     }
+
     @media only screen and (min-width: 1024px) {
       .search-icon {
         z-index: 1;
-        cursor: pointer;
         display: inline;
         height: 30px;
         width: 30px;
-        background-image: url("../images/icons/search-dark.svg");
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
+        @include background-icon("../images/icons/search-dark.svg");
       }
     }
 
     .cart-icon {
       z-index: 1;
-      cursor: pointer;
       height: 30px;
       width: 30px;
-      background-image: url("../images/icons/cart-dark.svg");
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: center;
+      @include background-icon("../images/icons/cart-dark.svg");
       background-size: cover;
     }
 
@@ -224,18 +201,14 @@
     }
 
     .toggle-position {
-      transform: translateX(-30px);
+      transform: translateX(-35px);
       cursor: pointer;
     }
 
     .menu {
-      cursor: pointer;
       height: 20px;
       width: 21px;
-      background-image: url("../images/icons/menu-dark.svg");
-      background-repeat: no-repeat;
-      background-position-x: start;
-      background-position-y: center;
+      @include background-icon("../images/icons/menu-dark.svg");
     }
 
     .product-card {
@@ -263,11 +236,7 @@
     }
 
     .move-down {
-      cursor: pointer;
-      background-image: url("../images/icons/down-arrow-dark.svg");
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: center;
+      @include background-icon("../images/icons/down-arrow-dark.svg");
       border: 1px solid $primary-dark-text-color;
     }
   }
