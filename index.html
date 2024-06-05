@@ -1,791 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-commerce</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
 
-  <body id="body" class="body">
-    <div id="top-section" class="body__top-section">
-      <!-- header section -->
-      <header class="header">
-        <div class="header__menu-item">
-          <div id="menu-button" class="menu"></div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
 
-        <img class="header__logo" src="images/musify-logo.svg" alt="musify" />
-
-        <!-- side headers -->
-        <div class="side-headers">
-          <div class="header__menubar">
-            <a href="#" class="header__menuitem"> Home</a>
-            <a href="#" class="header__menuitem"> Explore</a>
-            <a href="#" class="header__menuitem"> Contact </a>
-          </div>
-          <div class="header__action-item header__actions">
-            <div
-              id="toggle-button"
-              class="header__theme-toggle toggle-background"
-            >
-              <img
-                id="moon-image"
-                class="header__toggle-img"
-                src="images/icons/moon.svg"
-                alt="moon"
-              />
-              <div class="header__toggle-circle toggle-position"></div>
-              <img
-                id="sun-image"
-                class="header__toggle-img--img-1"
-                src="images/icons/sun.svg"
-                alt="sun"
-              />
-            </div>
-            <div class="search-icon"></div>
-            <div class="cart-icon"></div>
-            <div class="header__login">Login</div>
-          </div>
-        </div>
-        <div id="menu-pop-up" class="menu-pop-up pop-up-close menu-background">
-          <img src="images/musify-logo.svg" class="header__logo" alt="musify-logo">
-          <a href="#" class="menu-pop-up__item"> Home </a>
-          <a href="#" class="menu-pop-up__item"> Explore </a>
-          <a href="#" class="menu-pop-up__item"> Contact </a>
-        </div>
-        <div id="dark-wrapper" class="dark-wrapper item-display--none"></div>
-      </header>
-
-      <!-- input section -->
-
-      <div class="search">
-        <input
-          class="search__input input-shadow input-background"
-          type="text"
-          placeholder="Search..."
-        />
-        <img
-          class="search__icon"
-          src="images/icons/search-icon.svg"
-          alt="search-icon"
-        />
+<body id="body" class="body">
+  <div id="top-section" class="body__top-section">
+    <!-- header section -->
+    <header class="header">
+      <div class="header__menu-item">
+        <div id="menu-button" class="menu"></div>
       </div>
 
-      <!-- explore section -->
-      <section class="explore">
-        <div class="explore__heads">
-          <h2 class="explore__title">
-            Let's Dive in <span class="explore__subtitle">Music</span> World
-          </h2>
-          <p class="explore__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            pharetra, phasellus
-          </p>
-          <div class="explore__buttons">
-            <button class="explore__button">Shop Now</button>
-            <div class="explore__button right-button--secondary">
-              <img
-                class="right-button__icon"
-                src="images/icons/cart-orange.svg"
-                alt="cart-icon"
-              />
-              <p class="right-button__text">Add to cart</p>
-            </div>
-          </div>
+      <img class="header__logo" src="images/logos/musify-logo.svg" alt="musify" />
+
+      <!-- side headers -->
+      <div class="side-headers">
+        <div class="header__menubar">
+          <a href="#" class="header__menuitem"> Home</a>
+          <a href="#" class="header__menuitem"> Explore</a>
+          <a href="#" class="header__menuitem"> Contact </a>
         </div>
-
-        <div class="explore-section">
-          <!-- down button -->
-          <div class="product--move-down">
-            <div
-              id="move-down-button"
-              class="move-down-button move-down-button__arrow move-down"
-            ></div>
+        <div class="header__action-item header__actions">
+          <div id="toggle-button" class="header__theme-toggle toggle-background">
+            <img id="moon-image" class="header__toggle-img" src="images/icons/moon.svg" alt="moon" />
+            <div class="header__toggle-circle toggle-position"></div>
+            <img id="sun-image" class="header__toggle-img--img-1" src="images/icons/sun.svg" alt="sun" />
           </div>
-
-          <!-- explore items-list -->
-          <div class="explore-items-list">
-            <!-- single explore item -->
-            <div class="product product-card card--border">
-              <div class="product__details">
-                <h2 class="product__name">Wireles Headphones</h2>
-                <div class="product__price">
-                  <p class="product__price-current">$19.99</p>
-                  <p class="product__price-cut">$29.99</p>
-                </div>
-              </div>
-              <img
-                class="product__image"
-                src="images/red-headphone.svg"
-                alt="head-phone"
-              />
-            </div>
-
-            <!-- single explore item -->
-            <div class="product product-card card--border">
-              <div class="product__details">
-                <h2 class="product__name">Wireless Headphones</h2>
-                <div class="product__price">
-                  <p class="product__price-current">$19.99</p>
-                  <p class="product__price-cut">$29.99</p>
-                </div>
-              </div>
-              <img
-                class="product__image"
-                src="images/red-headphone.svg"
-                alt="head-phone"
-              />
-            </div>
-
-            <!-- single explore item -->
-            <div class="product product-card card--border">
-              <div class="product__details">
-                <h2 class="product__name">Wireless Headphones</h2>
-                <div class="product__price">
-                  <p class="product__price-current">$19.99</p>
-                  <p class="product__price-cut">$29.99</p>
-                </div>
-              </div>
-              <img
-                class="product__image"
-                src="images/red-headphone.svg"
-                alt="head-phone"
-              />
-            </div>
-
-            <!-- single explore item -->
-            <div class="product product-card card--border">
-              <div class="product__details">
-                <h2 class="product__name">Wireless Headphones</h2>
-                <div class="product__price">
-                  <p class="product__price-current">$19.99</p>
-                  <p class="product__price-cut">$29.99</p>
-                </div>
-              </div>
-              <img
-                class="product__image"
-                src="images/red-headphone.svg"
-                alt="head-phone"
-              />
-            </div>
-
-            <!-- single explore item -->
-            <div class="product product-card card--border">
-              <div class="product__details">
-                <h2 class="product__name">Wireless Headphones</h2>
-                <div class="product__price">
-                  <p class="product__price-current">$19.99</p>
-                  <p class="product__price-cut">$29.99</p>
-                </div>
-              </div>
-              <img
-                class="product__image"
-                src="images/red-headphone.svg"
-                alt="head-phone"
-              />
-            </div>
-          </div>
+          <div class="search-icon"></div>
+          <div class="cart-icon"></div>
+          <div class="header__login">Login</div>
         </div>
-        <img
-          src="images/hero-model.svg"
-          class="hero-model__image"
-          alt="hero-model"
-        />
-        <div class="blurred__bottom blur-gradient"></div>
-      </section>
+      </div>
+      <div id="menu-pop-up" class="menu-pop-up pop-up-close menu-background">
+        <img src="images/logos/musify-logo.svg" class="header__logo" alt="musify-logo">
+        <a href="#" class="menu-pop-up__item"> Home </a>
+        <a href="#" class="menu-pop-up__item"> Explore </a>
+        <a href="#" class="menu-pop-up__item"> Contact </a>
+      </div>
+      <div id="dark-wrapper" class="dark-wrapper item-display--none"></div>
+    </header>
+
+    <!-- input section -->
+
+    <div class="search">
+      <input class="search__input input-shadow input-background" type="text" placeholder="Search..." />
+      <img class="search__icon" src="images/icons/search-icon.svg" alt="search-icon" />
     </div>
 
-    <!-- bottom section -->
-
-    <div id="bottom-section">
-      <!-- popular trends-->
-      <section class="trends">
-        <h2 class="trends__title text--color">Popular Trends</h2>
-
-        <!-- popular trends list-->
-        <div class="trends__item-list">
-          <!-- popular trends list-item -->
-          <div class="trends-product card--border">
-            <div class="trends-product__img-wrap">
-              <img
-                class="trends-product__img"
-                src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg"
-                alt="black-headphone"
-              />
-            </div>
-            <div
-              class="trends-product__bottom-section trends-product-background"
-            >
-              <p class="trends-product__title">
-                Wireless Headphones with Dolby Surround Sound
-              </p>
-              <ul class="trends-product__features">
-                <li class="trends-product__feature">
-                  <p>Truely wireless</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>Dolby Surround Sound</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>13 hrs of playback time</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>Made in Germany</p>
-                </li>
-              </ul>
-              <p class="trends-product__price">$145</p>
-              <div class="trends-product__buttons">
-                <div
-                  class="trends-product__button trends-product__right-button--secondary"
-                >
-                  <img
-                    class="trends-product__right-button-icon"
-                    src="images/icons/cart-orange.svg"
-                    alt="cart-icon"
-                  />
-                  <p class="trends-product__right-button-text">Add to cart</p>
-                </div>
-                <button class="trends-product__button">Buy Now</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="trends-product card--border">
-            <div class="trends-product__img-wrap">
-              <img
-                class="trends-product__img"
-                src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg"
-                alt="black-headphone"
-              />
-            </div>
-            <div
-              class="trends-product__bottom-section trends-product-background"
-            >
-              <p class="trends-product__title">
-                Wireless Headphones with Dolby Surround Sound
-              </p>
-              <ul class="trends-product__features">
-                <li class="trends-product__feature">
-                  <p>Truely wireless</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>Dolby Surround Sound</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>13 hrs of playback time</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>Made in Germany</p>
-                </li>
-              </ul>
-              <p class="trends-product__price">$145</p>
-              <div class="trends-product__buttons">
-                <div
-                  class="trends-product__button trends-product__right-button--secondary"
-                >
-                  <img
-                    class="trends-product__right-button-icon"
-                    src="images/icons/cart-orange.svg"
-                    alt="cart-icon"
-                  />
-                  <p class="trends-product__right-button-text">Add to cart</p>
-                </div>
-                <button class="trends-product__button">Buy Now</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="trends-product card--border">
-            <div class="trends-product__img-wrap">
-              <img
-                class="trends-product__img"
-                src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg"
-                alt="black-headphone"
-              />
-            </div>
-            <div
-              class="trends-product__bottom-section trends-product-background"
-            >
-              <p class="trends-product__title">
-                Wireless Headphones with Dolby Surround Sound
-              </p>
-              <ul class="trends-product__features">
-                <li class="trends-product__feature">
-                  <p>Truely wireless</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>Dolby Surround Sound</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>13 hrs of playback time</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>Made in Germany</p>
-                </li>
-              </ul>
-              <p class="trends-product__price">$145</p>
-              <div class="trends-product__buttons">
-                <div
-                  class="trends-product__button trends-product__right-button--secondary"
-                >
-                  <img
-                    class="trends-product__right-button-icon"
-                    src="images/icons/cart-orange.svg"
-                    alt="cart-icon"
-                  />
-                  <p class="trends-product__right-button-text">Add to cart</p>
-                </div>
-                <button class="trends-product__button">Buy Now</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="trends-product card--border">
-            <div class="trends-product__img-wrap">
-              <img
-                class="trends-product__img"
-                src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg"
-                alt="black-headphone"
-              />
-            </div>
-            <div
-              class="trends-product__bottom-section trends-product-background"
-            >
-              <p class="trends-product__title">
-                Wireless Headphones with Dolby Surround Sound
-              </p>
-              <ul class="trends-product__features">
-                <li class="trends-product__feature">
-                  <p>Truely wireless</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>Dolby Surround Sound</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>13 hrs of playback time</p>
-                </li>
-                <li class="trends-product__feature">
-                  <p>Made in Germany</p>
-                </li>
-              </ul>
-              <p class="trends-product__price">$145</p>
-              <div class="trends-product__buttons">
-                <div
-                  class="trends-product__button trends-product__right-button--secondary"
-                >
-                  <img
-                    class="trends-product__right-button-icon"
-                    src="images/icons/cart-orange.svg"
-                    alt="cart-icon"
-                  />
-                  <p class="trends-product__right-button-text">Add to cart</p>
-                </div>
-                <button class="trends-product__button">Buy Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- musify values -->
-      <section class="values-section">
-        <h2 class="values-section__title">Why buy directly from Musify?</h2>
-        <div class="values-section__features">
-          <div class="values-section__feature">
-            <img
-              class="values-section__feature-icon"
-              src="images/icons/white-delivery.svg"
-              alt="delivery-jeep"
-            />
-            <p class="values-section__feature-title">Free Delivery</p>
-          </div>
-          <div class="values-section__feature">
-            <img
-              class="values-section__feature-icon"
-              src="images/icons/checked.svg"
-              alt="delivery-jeep"
-            />
-            <p class="values-section__feature-title">Verified Products</p>
-          </div>
-          <div class="values-section__feature">
-            <img
-              class="values-section__feature-icon"
-              src="images/icons/customer.svg"
-              alt="delivery-jeep"
-            />
-            <p class="values-section__feature-title">24/7 Customer Support</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- offers section -->
-      <section class="offers-section">
-        <h2 class="offers-section__title">Exclusive Offer</h2>
-
-        <!-- offer image-->
-        <div class="offers-section__image-details">
-          <div class="offers-section__image-wrap">
-            <img
-              class="offers-section__image"
-              src="images/offer-image.svg"
-              alt="offer-image"
-            />
-            <div class="offers-section__min-details">
-              <p class="offers-section__offer-text">20% off</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- offer timer-->
-        <div class="offers-section__timer">
-          <p class="offers-section__title--duplicate">Exclusive Offer</p>
-          <p class="offers-section__timer-title">Offer ends in</p>
-          <div class="timer-count">
-            <div class="timer-count__timer">
-              <div class="timer-count__value" id="hours">02</div>
-              <p class="timer-count__subtitle">Hour</p>
-            </div>
-            <div class="timer-count__timer">
-              <div class="timer-count__value" id="minutes">38</div>
-              <p class="timer-count__subtitle">Min</p>
-            </div>
-            <div class="timer-count__timer">
-              <div class="timer-count__value" id="seconds">49</div>
-              <p class="timer-count__subtitle">Secs</p>
-            </div>
-          </div>
-          <div class="offers-section__buttons">
-            <div class="offers-section__button">View Details</div>
-            <div class="offers-section__button-1">Shop Now</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- accessories section -->
-      <section class="accessories">
-        <h2 class="accessories__title">Try our other Accessories</h2>
-        <div class="accessories__list">
-          <div class="accessories__image-wrapper">
-            <div class="accessories__image-wrap">
-              <img
-                class="accessories__image"
-                src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw34d84041/images/Titan/Catalog/1698KM02_1.jpg?sw=800&sh=800"
-                alt="watch"
-              />
-            </div>
-            <div class="accessories__image-wrap">
-              <img
-                class="accessories__image"
-                src="https://i.redd.it/i-am-working-on-a-lightweight-simple-headphone-using-v0-4wx66ry18ipb1.jpg?width=4000&format=pjpg&auto=webp&s=cb6c5b7acd44a655266e61f66a32ffa3ff6c980f"
-                alt="headphone"
-              />
-            </div>
-          </div>
-          <div class="accessories__image-wrapper">
-            <div class="accessories__image-wrap">
-              <img
-                class="accessories__image"
-                src="https://i.pinimg.com/736x/d5/31/4b/d5314bf7b15732a041c4c9444a4dd703.jpg"
-                alt="headphone"
-              />
-            </div>
-            <div class="accessories__image-wrap">
-              <img
-                class="accessories__image"
-                src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVhZHBob25lfGVufDB8fDB8fHww"
-                alt="headphone"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- new arrivals -->
-      <section class="arrivals">
-        <h2 class="arrivals__title text--color">New Arrivals</h2>
-
-        <!-- popular trends list-->
-        <div class="arrivals__item-list">
-          <!-- popular trends list-item -->
-          <div class="arrivals-product card--default-border">
-            <div class="arrivals-product__img-wrap">
-              <img
-                class="arrivals-product__img"
-                src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczczLXBhaS0xNTgta2FuYXRlLTAxLW1vY2t1cF8xLmpwZw.jpg"
-                alt="black-headphone"
-              />
-            </div>
-            <div class="arrivals-product__bottom-section">
-              <p class="arrivals-product__title">
-                Wireless Headphones with Dolby Surround Sound
-              </p>
-              <ul class="arrivals-product__features">
-                <li class="arrivals-product__feature">
-                  <p>Truely wireless</p>
-                </li>
-                <li class="arrivals-product__feature">
-                  <p>Dolby Surround Sound</p>
-                </li>
-                <li class="arrivals-product__feature">
-                  <p>13 hrs of playback time</p>
-                </li>
-                <li class="arrivals-product__feature">
-                  <p>Made in Germany</p>
-                </li>
-              </ul>
-              <p class="arrivals-product__price">$145</p>
-              <div class="arrivals-product__buttons">
-                <div
-                  class="arrivals-product__button arrivals-product__right-button--secondary"
-                >
-                  <img
-                    class="arrivals-product__right-button-icon"
-                    src="images/icons/cart-orange.svg"
-                    alt="cart-icon"
-                  />
-                  <p class="arrivals-product__right-button-text">Add to cart</p>
-                </div>
-                <button class="arrivals-product__button">Buy Now</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="arrivals-product card--default-border">
-            <div class="arrivals-product__img-wrap">
-              <img
-                class="arrivals-product__img"
-                src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVhZHBob25lfGVufDB8fDB8fHww"
-                alt="black-headphone"
-              />
-            </div>
-            <div class="arrivals-product__bottom-section">
-              <p class="arrivals-product__title">
-                Wireless Headphones with Dolby Surround Sound
-              </p>
-              <ul class="arrivals-product__features">
-                <li class="arrivals-product__feature">
-                  <p>Truely wireless</p>
-                </li>
-                <li class="arrivals-product__feature">
-                  <p>Dolby Surround Sound</p>
-                </li>
-                <li class="arrivals-product__feature">
-                  <p>13 hrs of playback time</p>
-                </li>
-                <li class="arrivals-product__feature">
-                  <p>Made in Germany</p>
-                </li>
-              </ul>
-              <p class="arrivals-product__price">$145</p>
-              <div class="arrivals-product__buttons">
-                <div
-                  class="arrivals-product__button arrivals-product__right-button--secondary"
-                >
-                  <img
-                    class="arrivals-product__right-button-icon"
-                    src="images/icons/cart-orange.svg"
-                    alt="cart-icon"
-                  />
-                  <p class="arrivals-product__right-button-text">Add to cart</p>
-                </div>
-                <button class="arrivals-product__button">Buy Now</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="arrivals-product card--default-border">
-            <div class="arrivals-product__img-wrap">
-              <img
-                class="arrivals-product__img"
-                src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczczLXBhaS0xNTgta2FuYXRlLTAxLW1vY2t1cF8xLmpwZw.jpg"
-                alt="black-headphone"
-              />
-            </div>
-            <div class="arrivals-product__bottom-section">
-              <p class="arrivals-product__title">
-                Wireless Headphones with Dolby Surround Sound
-              </p>
-              <ul class="arrivals-product__features">
-                <li class="arrivals-product__feature">
-                  <p>Truely wireless</p>
-                </li>
-                <li class="arrivals-product__feature">
-                  <p>Dolby Surround Sound</p>
-                </li>
-                <li class="arrivals-product__feature">
-                  <p>13 hrs of playback time</p>
-                </li>
-                <li class="arrivals-product__feature">
-                  <p>Made in Germany</p>
-                </li>
-              </ul>
-              <p class="arrivals-product__price">$145</p>
-              <div class="arrivals-product__buttons">
-                <div
-                  class="arrivals-product__button arrivals-product__right-button--secondary"
-                >
-                  <img
-                    class="arrivals-product__right-button-icon"
-                    src="images/icons/cart-orange.svg"
-                    alt="cart-icon"
-                  />
-                  <p class="arrivals-product__right-button-text">Add to cart</p>
-                </div>
-                <button class="arrivals-product__button">Buy Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- share section -->
-
-      <div class="share-section">
-        <img class="share-section__image" src="images/qr.svg" alt="qr-code" />
-        <div class="share-section__details">
-          <p class="share-section__title">Scan QR code for more</p>
-          <p class="share-section__subtitle">
-            Now you can download the official musify app.
-          </p>
-          <div class="share-section__buttons">
-            <img
-              class="share-section__share-button"
-              src="images/playstore.svg"
-              alt="app-store"
-            />
-            <img
-              class="share-section__share-button-1"
-              src="images/app-store.svg"
-              alt="app-store"
-            />
+    <!-- explore section -->
+    <section class="explore">
+      <div class="explore__heads">
+        <h2 class="explore__title">
+          Let's Dive in <span class="explore__subtitle">Music</span> World
+        </h2>
+        <p class="explore__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          pharetra, phasellus
+        </p>
+        <div class="explore__buttons">
+          <button class="explore__button">Shop Now</button>
+          <div class="explore__button right-button--secondary">
+            <img class="right-button__icon" src="images/icons/cart-orange.svg" alt="cart-icon" />
+            <p class="right-button__text">Add to cart</p>
           </div>
         </div>
       </div>
 
-      <!-- footer section -->
-      <footer class="footer">
-        <div class="footer__top-section">
-          <div class="footer__left-section">
-            <div class="footer__left-top">
-              <img
-                src="images/musify-logo.svg"
-                alt="musify-logo"
-                class="footer__logo"
-              />
-              <div class="footer__item-list">
-                <div class="footer__item">
-                  <p class="footer__item-topic">Shop</p>
-                  <div class="footer__item-subtopics">
-                    <a href="#" class="footer__item-subtopic">Wireless</a>
-                    <a href="#" class="footer__item-subtopic"> Headphone</a>
-                    <a href="#" class="footer__item-subtopic"> Gaming</a>
-                    <a href="#" class="footer__item-subtopic"> Speakers</a>
-                    <a href="#" class="footer__item-subtopic"> Soundbars</a>
-                    <a href="#" class="footer__item-subtopic"> Professional</a>
-                    <a href="#" class="footer__item-subtopic"> Offer Zone</a>
-                  </div>
-                </div>
-                <div class="footer__country-item">
-                  <p class="footer__item-topic">Country</p>
-                  <p class="footer__item-topic">India</p>
-                </div>
-              </div>
+      <div class="explore-section">
+        <!-- down button -->
+        <div class="product--move-down">
+          <div id="move-down-button" class="move-down-button move-down-button__arrow move-down"></div>
+        </div>
 
+        <!-- explore items-list -->
+        <div class="explore-items-list">
+          <!-- single explore item -->
+          <div class="product product-card card--border">
+            <div class="product__details">
+              <h2 class="product__name">Wireles Headphones</h2>
+              <div class="product__price">
+                <p class="product__price-current">$19.99</p>
+                <p class="product__price-cut">$29.99</p>
+              </div>
+            </div>
+            <img class="product__image" src="images/product-images/red-headphone.svg" alt="head-phone" />
+          </div>
+
+          <!-- single explore item -->
+          <div class="product product-card card--border">
+            <div class="product__details">
+              <h2 class="product__name">Wireless Headphones</h2>
+              <div class="product__price">
+                <p class="product__price-current">$19.99</p>
+                <p class="product__price-cut">$29.99</p>
+              </div>
+            </div>
+            <img class="product__image" src="images/product-images/red-headphone.svg" alt="head-phone" />
+          </div>
+
+          <!-- single explore item -->
+          <div class="product product-card card--border">
+            <div class="product__details">
+              <h2 class="product__name">Wireless Headphones</h2>
+              <div class="product__price">
+                <p class="product__price-current">$19.99</p>
+                <p class="product__price-cut">$29.99</p>
+              </div>
+            </div>
+            <img class="product__image" src="images/product-images/red-headphone.svg" alt="head-phone" />
+          </div>
+
+          <!-- single explore item -->
+          <div class="product product-card card--border">
+            <div class="product__details">
+              <h2 class="product__name">Wireless Headphones</h2>
+              <div class="product__price">
+                <p class="product__price-current">$19.99</p>
+                <p class="product__price-cut">$29.99</p>
+              </div>
+            </div>
+            <img class="product__image" src="images/product-images/red-headphone.svg" alt="head-phone" />
+          </div>
+
+          <!-- single explore item -->
+          <div class="product product-card card--border">
+            <div class="product__details">
+              <h2 class="product__name">Wireless Headphones</h2>
+              <div class="product__price">
+                <p class="product__price-current">$19.99</p>
+                <p class="product__price-cut">$29.99</p>
+              </div>
+            </div>
+            <img class="product__image" src="images/product-images/red-headphone.svg" alt="head-phone" />
+          </div>
+        </div>
+      </div>
+      <img src="images/section-images/hero-model.svg" class="hero-model__image" alt="hero-model" />
+      <div class="blurred__bottom blur-gradient"></div>
+    </section>
+  </div>
+
+  <!-- bottom section -->
+
+  <div id="bottom-section">
+    <!-- popular trends-->
+    <section class="trends">
+      <h2 class="trends__title text--color">Popular Trends</h2>
+
+      <!-- popular trends list-->
+      <div class="trends__item-list">
+        <!-- popular trends list-item -->
+        <div class="trends-product card--border">
+          <div class="trends-product__img-wrap">
+            <img class="trends-product__img"
+              src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg"
+              alt="black-headphone" />
+          </div>
+          <div class="trends-product__bottom-section trends-product-background">
+            <p class="trends-product__title">
+              Wireless Headphones with Dolby Surround Sound
+            </p>
+            <ul class="trends-product__features">
+              <li class="trends-product__feature">
+                <p>Truely wireless</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>Dolby Surround Sound</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>13 hrs of playback time</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>Made in Germany</p>
+              </li>
+            </ul>
+            <p class="trends-product__price">$145</p>
+            <div class="trends-product__buttons">
+              <div class="trends-product__button trends-product__right-button--secondary">
+                <img class="trends-product__right-button-icon" src="images/icons/cart-orange.svg" alt="cart-icon" />
+                <p class="trends-product__right-button-text">Add to cart</p>
+              </div>
+              <button class="trends-product__button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="trends-product card--border">
+          <div class="trends-product__img-wrap">
+            <img class="trends-product__img"
+              src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg"
+              alt="black-headphone" />
+          </div>
+          <div class="trends-product__bottom-section trends-product-background">
+            <p class="trends-product__title">
+              Wireless Headphones with Dolby Surround Sound
+            </p>
+            <ul class="trends-product__features">
+              <li class="trends-product__feature">
+                <p>Truely wireless</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>Dolby Surround Sound</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>13 hrs of playback time</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>Made in Germany</p>
+              </li>
+            </ul>
+            <p class="trends-product__price">$145</p>
+            <div class="trends-product__buttons">
+              <div class="trends-product__button trends-product__right-button--secondary">
+                <img class="trends-product__right-button-icon" src="images/icons/cart-orange.svg" alt="cart-icon" />
+                <p class="trends-product__right-button-text">Add to cart</p>
+              </div>
+              <button class="trends-product__button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="trends-product card--border">
+          <div class="trends-product__img-wrap">
+            <img class="trends-product__img"
+              src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg"
+              alt="black-headphone" />
+          </div>
+          <div class="trends-product__bottom-section trends-product-background">
+            <p class="trends-product__title">
+              Wireless Headphones with Dolby Surround Sound
+            </p>
+            <ul class="trends-product__features">
+              <li class="trends-product__feature">
+                <p>Truely wireless</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>Dolby Surround Sound</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>13 hrs of playback time</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>Made in Germany</p>
+              </li>
+            </ul>
+            <p class="trends-product__price">$145</p>
+            <div class="trends-product__buttons">
+              <div class="trends-product__button trends-product__right-button--secondary">
+                <img class="trends-product__right-button-icon" src="images/icons/cart-orange.svg" alt="cart-icon" />
+                <p class="trends-product__right-button-text">Add to cart</p>
+              </div>
+              <button class="trends-product__button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="trends-product card--border">
+          <div class="trends-product__img-wrap">
+            <img class="trends-product__img"
+              src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg"
+              alt="black-headphone" />
+          </div>
+          <div class="trends-product__bottom-section trends-product-background">
+            <p class="trends-product__title">
+              Wireless Headphones with Dolby Surround Sound
+            </p>
+            <ul class="trends-product__features">
+              <li class="trends-product__feature">
+                <p>Truely wireless</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>Dolby Surround Sound</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>13 hrs of playback time</p>
+              </li>
+              <li class="trends-product__feature">
+                <p>Made in Germany</p>
+              </li>
+            </ul>
+            <p class="trends-product__price">$145</p>
+            <div class="trends-product__buttons">
+              <div class="trends-product__button trends-product__right-button--secondary">
+                <img class="trends-product__right-button-icon" src="images/icons/cart-orange.svg" alt="cart-icon" />
+                <p class="trends-product__right-button-text">Add to cart</p>
+              </div>
+              <button class="trends-product__button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- musify values -->
+    <section class="values-section">
+      <h2 class="values-section__title">Why buy directly from Musify?</h2>
+      <div class="values-section__features">
+        <div class="values-section__feature">
+          <img class="values-section__feature-icon" src="images/icons/white-delivery.svg" alt="delivery-jeep" />
+          <p class="values-section__feature-title">Free Delivery</p>
+        </div>
+        <div class="values-section__feature">
+          <img class="values-section__feature-icon" src="images/icons/checked.svg" alt="delivery-jeep" />
+          <p class="values-section__feature-title">Verified Products</p>
+        </div>
+        <div class="values-section__feature">
+          <img class="values-section__feature-icon" src="images/icons/customer.svg" alt="delivery-jeep" />
+          <p class="values-section__feature-title">24/7 Customer Support</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- offers section -->
+    <section class="offers-section">
+      <h2 class="offers-section__title">Exclusive Offer</h2>
+
+      <!-- offer image-->
+      <div class="offers-section__image-details">
+        <div class="offers-section__image-wrap">
+          <img class="offers-section__image" src="images/section-images/offer-image.svg" alt="offer-image" />
+          <div class="offers-section__min-details">
+            <p class="offers-section__offer-text">20% off</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- offer timer-->
+      <div class="offers-section__timer">
+        <p class="offers-section__title--duplicate">Exclusive Offer</p>
+        <p class="offers-section__timer-title">Offer ends in</p>
+        <div class="timer-count">
+          <div class="timer-count__timer">
+            <div class="timer-count__value" id="hours">02</div>
+            <p class="timer-count__subtitle">Hour</p>
+          </div>
+          <div class="timer-count__timer">
+            <div class="timer-count__value" id="minutes">38</div>
+            <p class="timer-count__subtitle">Min</p>
+          </div>
+          <div class="timer-count__timer">
+            <div class="timer-count__value" id="seconds">49</div>
+            <p class="timer-count__subtitle">Secs</p>
+          </div>
+        </div>
+        <div class="offers-section__buttons">
+          <div class="offers-section__button">View Details</div>
+          <div class="offers-section__button-1">Shop Now</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- accessories section -->
+    <section class="accessories">
+      <h2 class="accessories__title">Try our other Accessories</h2>
+      <div class="accessories__list">
+        <div class="accessories__image-wrapper">
+          <div class="accessories__image-wrap">
+            <img class="accessories__image"
+              src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw34d84041/images/Titan/Catalog/1698KM02_1.jpg?sw=800&sh=800"
+              alt="watch" />
+          </div>
+          <div class="accessories__image-wrap">
+            <img class="accessories__image"
+              src="https://i.redd.it/i-am-working-on-a-lightweight-simple-headphone-using-v0-4wx66ry18ipb1.jpg?width=4000&format=pjpg&auto=webp&s=cb6c5b7acd44a655266e61f66a32ffa3ff6c980f"
+              alt="headphone" />
+          </div>
+        </div>
+        <div class="accessories__image-wrapper">
+          <div class="accessories__image-wrap">
+            <img class="accessories__image"
+              src="https://i.pinimg.com/736x/d5/31/4b/d5314bf7b15732a041c4c9444a4dd703.jpg" alt="headphone" />
+          </div>
+          <div class="accessories__image-wrap">
+            <img class="accessories__image"
+              src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVhZHBob25lfGVufDB8fDB8fHww"
+              alt="headphone" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- new arrivals -->
+    <section class="arrivals">
+      <h2 class="arrivals__title text--color">New Arrivals</h2>
+
+      <!-- popular trends list-->
+      <div class="arrivals__item-list">
+        <!-- popular trends list-item -->
+        <div class="arrivals-product card--default-border">
+          <div class="arrivals-product__img-wrap">
+            <img class="arrivals-product__img"
+              src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczczLXBhaS0xNTgta2FuYXRlLTAxLW1vY2t1cF8xLmpwZw.jpg"
+              alt="black-headphone" />
+          </div>
+          <div class="arrivals-product__bottom-section">
+            <p class="arrivals-product__title">
+              Wireless Headphones with Dolby Surround Sound
+            </p>
+            <ul class="arrivals-product__features">
+              <li class="arrivals-product__feature">
+                <p>Truely wireless</p>
+              </li>
+              <li class="arrivals-product__feature">
+                <p>Dolby Surround Sound</p>
+              </li>
+              <li class="arrivals-product__feature">
+                <p>13 hrs of playback time</p>
+              </li>
+              <li class="arrivals-product__feature">
+                <p>Made in Germany</p>
+              </li>
+            </ul>
+            <p class="arrivals-product__price">$145</p>
+            <div class="arrivals-product__buttons">
+              <div class="arrivals-product__button arrivals-product__right-button--secondary">
+                <img class="arrivals-product__right-button-icon" src="images/icons/cart-orange.svg" alt="cart-icon" />
+                <p class="arrivals-product__right-button-text">Add to cart</p>
+              </div>
+              <button class="arrivals-product__button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrivals-product card--default-border">
+          <div class="arrivals-product__img-wrap">
+            <img class="arrivals-product__img"
+              src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVhZHBob25lfGVufDB8fDB8fHww"
+              alt="black-headphone" />
+          </div>
+          <div class="arrivals-product__bottom-section">
+            <p class="arrivals-product__title">
+              Wireless Headphones with Dolby Surround Sound
+            </p>
+            <ul class="arrivals-product__features">
+              <li class="arrivals-product__feature">
+                <p>Truely wireless</p>
+              </li>
+              <li class="arrivals-product__feature">
+                <p>Dolby Surround Sound</p>
+              </li>
+              <li class="arrivals-product__feature">
+                <p>13 hrs of playback time</p>
+              </li>
+              <li class="arrivals-product__feature">
+                <p>Made in Germany</p>
+              </li>
+            </ul>
+            <p class="arrivals-product__price">$145</p>
+            <div class="arrivals-product__buttons">
+              <div class="arrivals-product__button arrivals-product__right-button--secondary">
+                <img class="arrivals-product__right-button-icon" src="images/icons/cart-orange.svg" alt="cart-icon" />
+                <p class="arrivals-product__right-button-text">Add to cart</p>
+              </div>
+              <button class="arrivals-product__button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrivals-product card--default-border">
+          <div class="arrivals-product__img-wrap">
+            <img class="arrivals-product__img"
+              src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczczLXBhaS0xNTgta2FuYXRlLTAxLW1vY2t1cF8xLmpwZw.jpg"
+              alt="black-headphone" />
+          </div>
+          <div class="arrivals-product__bottom-section">
+            <p class="arrivals-product__title">
+              Wireless Headphones with Dolby Surround Sound
+            </p>
+            <ul class="arrivals-product__features">
+              <li class="arrivals-product__feature">
+                <p>Truely wireless</p>
+              </li>
+              <li class="arrivals-product__feature">
+                <p>Dolby Surround Sound</p>
+              </li>
+              <li class="arrivals-product__feature">
+                <p>13 hrs of playback time</p>
+              </li>
+              <li class="arrivals-product__feature">
+                <p>Made in Germany</p>
+              </li>
+            </ul>
+            <p class="arrivals-product__price">$145</p>
+            <div class="arrivals-product__buttons">
+              <div class="arrivals-product__button arrivals-product__right-button--secondary">
+                <img class="arrivals-product__right-button-icon" src="images/icons/cart-orange.svg" alt="cart-icon" />
+                <p class="arrivals-product__right-button-text">Add to cart</p>
+              </div>
+              <button class="arrivals-product__button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- share section -->
+
+    <div class="share-section">
+      <img class="share-section__image" src="images/section-images/qr.svg" alt="qr-code" />
+      <div class="share-section__details">
+        <p class="share-section__title">Scan QR code for more</p>
+        <p class="share-section__subtitle">
+          Now you can download the official musify app.
+        </p>
+        <div class="share-section__buttons">
+          <img class="share-section__share-button" src="images/section-images/playstore.svg" alt="app-store" />
+          <img class="share-section__share-button-1" src="images/section-images/app-store.svg" alt="app-store" />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="footer__top-section">
+        <div class="footer__left-section">
+          <div class="footer__left-top">
+            <img src="images/logos/musify-logo.svg" alt="musify-logo" class="footer__logo" />
+            <div class="footer__item-list">
               <div class="footer__item">
-                <p class="footer__item-topic">Support</p>
+                <p class="footer__item-topic">Shop</p>
                 <div class="footer__item-subtopics">
-                  <a href="#" class="footer__item-subtopic">Order Status</a>
-                  <a href="#" class="footer__item-subtopic">
-                    Bulk Purchase Program</a
-                  >
-                  <a href="#" class="footer__item-subtopic"> Buy Authentic</a>
-                  <a href="#" class="footer__item-subtopic"> Product Support</a>
-                  <a href="#" class="footer__item-subtopic">
-                    Shipping & Delivery Policy</a
-                  >
-                  <a href="#" class="footer__item-subtopic">
-                    Cancellation and Return Policy</a
-                  >
-                  <a href="#" class="footer__item-subtopic"> Service Center</a>
-                  <a href="#" class="footer__item-subtopic"> Brand Shoes</a>
+                  <a href="#" class="footer__item-subtopic">Wireless</a>
+                  <a href="#" class="footer__item-subtopic"> Headphone</a>
+                  <a href="#" class="footer__item-subtopic"> Gaming</a>
+                  <a href="#" class="footer__item-subtopic"> Speakers</a>
+                  <a href="#" class="footer__item-subtopic"> Soundbars</a>
+                  <a href="#" class="footer__item-subtopic"> Professional</a>
+                  <a href="#" class="footer__item-subtopic"> Offer Zone</a>
                 </div>
               </div>
+              <div class="footer__country-item">
+                <p class="footer__item-topic">Country</p>
+                <p class="footer__item-topic">India</p>
+              </div>
             </div>
-            <div class="footer__subscribe-item-duplicate">
-              <p class="footer__item-topic">Subscribe to our News letter</p>
-              <div class="footer__form">
-                <input placeholder="Enter your mail id" class="footer__input" />
-                <button class="footer__button">Subscribe</button>
+
+            <div class="footer__item">
+              <p class="footer__item-topic">Support</p>
+              <div class="footer__item-subtopics">
+                <a href="#" class="footer__item-subtopic">Order Status</a>
+                <a href="#" class="footer__item-subtopic">
+                  Bulk Purchase Program</a>
+                <a href="#" class="footer__item-subtopic"> Buy Authentic</a>
+                <a href="#" class="footer__item-subtopic"> Product Support</a>
+                <a href="#" class="footer__item-subtopic">
+                  Shipping & Delivery Policy</a>
+                <a href="#" class="footer__item-subtopic">
+                  Cancellation and Return Policy</a>
+                <a href="#" class="footer__item-subtopic"> Service Center</a>
+                <a href="#" class="footer__item-subtopic"> Brand Shoes</a>
               </div>
             </div>
           </div>
-
-          <div class="footer__item-list">
-            <div class="footer__item">
-              <p class="footer__item-topic">About Us</p>
-              <div class="footer__item-subtopics">
-                <a href="#" class="footer__item-subtopic">Harman Corporate </a>
-                <a href="#" class="footer__item-subtopic"> Privacy Policy</a>
-                <a href="#" class="footer__item-subtopic"> Terms of Use</a>
-                <a href="#" class="footer__item-subtopic"> Why buy Direct</a>
-                <a href="#" class="footer__item-subtopic">
-                  JBL sound partners</a
-                >
-              </div>
-            </div>
-            <div class="footer__item">
-              <p class="footer__item-topic">Contact Us</p>
-              <div class="footer__item-subtopics">
-                <p class="footer__item-subtopic">1800-102-0525</p>
-                <p class="footer__item-subtopic">Mon-Sun 10AM-7PM</p>
-              </div>
-            </div>
-            <div class="footer__item">
-              <p class="footer__item-topic">Manufactured By</p>
-              <div class="footer__item-subtopics">
-                <a href="#" class="footer__item-subtopic"
-                  >Harman International</a
-                >
-                <a href="#" class="footer__item-subtopic"> Industries, Inc.</a>
-                <a href="#" class="footer__item-subtopic">
-                  8500, Balboa Blvd.</a
-                >
-                <a href="#" class="footer__item-subtopic">
-                  Northridge, CA 91329, USA</a
-                >
-              </div>
-            </div>
-            <div class="footer__item">
-              <p class="footer__item-topic">Share on Social Media</p>
-              <div class="footer__circle-list">
-                <a href="#" class="footer__item-circle">
-                  <img
-                    src="images/social-icons/google.svg"
-                    alt="google"
-                    class="footer__item-image"
-                  />
-                </a>
-                <a href="#" class="footer__item-circle">
-                  <img
-                    src="images/social-icons/instagram.svg"
-                    alt="google"
-                    class="footer__item-image"
-                  />
-                </a>
-                <a href="#" class="footer__item-circle">
-                  <img
-                    src="images/social-icons/twitter.svg"
-                    alt="google"
-                    class="footer__item-image"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="footer__subscribe-item">
+          <div class="footer__subscribe-item-duplicate">
             <p class="footer__item-topic">Subscribe to our News letter</p>
             <div class="footer__form">
               <input placeholder="Enter your mail id" class="footer__input" />
@@ -793,15 +566,67 @@
             </div>
           </div>
         </div>
-        <img
-          src="images/musify-logo.svg"
-          alt="musify-logo"
-          class="footer__logo-duplicate"
-        />
-        <p class="footer__copyright">© 2022.Musify.All Rights Reserved</p>
-      </footer>
-    </div>
 
-    <script src="index.js"></script>
-  </body>
+        <div class="footer__item-list">
+          <div class="footer__item">
+            <p class="footer__item-topic">About Us</p>
+            <div class="footer__item-subtopics">
+              <a href="#" class="footer__item-subtopic">Harman Corporate </a>
+              <a href="#" class="footer__item-subtopic"> Privacy Policy</a>
+              <a href="#" class="footer__item-subtopic"> Terms of Use</a>
+              <a href="#" class="footer__item-subtopic"> Why buy Direct</a>
+              <a href="#" class="footer__item-subtopic">
+                JBL sound partners</a>
+            </div>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-topic">Contact Us</p>
+            <div class="footer__item-subtopics">
+              <p class="footer__item-subtopic">1800-102-0525</p>
+              <p class="footer__item-subtopic">Mon-Sun 10AM-7PM</p>
+            </div>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-topic">Manufactured By</p>
+            <div class="footer__item-subtopics">
+              <a href="#" class="footer__item-subtopic">Harman International</a>
+              <a href="#" class="footer__item-subtopic"> Industries, Inc.</a>
+              <a href="#" class="footer__item-subtopic">
+                8500, Balboa Blvd.</a>
+              <a href="#" class="footer__item-subtopic">
+                Northridge, CA 91329, USA</a>
+            </div>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-topic">Share on Social Media</p>
+            <div class="footer__circle-list">
+              <a href="#" class="footer__item-circle">
+                <img src="images/social-icons/google.svg" alt="google" class="footer__item-image" />
+              </a>
+              <a href="#" class="footer__item-circle">
+                <img src="images/social-icons/instagram.svg" alt="google" class="footer__item-image" />
+              </a>
+              <a href="#" class="footer__item-circle">
+                <img src="images/social-icons/twitter.svg" alt="google" class="footer__item-image" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__subscribe-item">
+          <p class="footer__item-topic">Subscribe to our News letter</p>
+          <div class="footer__form">
+            <input placeholder="Enter your mail id" class="footer__input" />
+            <button class="footer__button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <img src="images/logos/musify-logo.svg" alt="musify-logo" class="footer__logo-duplicate" />
+      <p class="footer__copyright">© 2022.Musify.All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
