@@ -17,6 +17,7 @@
     width: 100%;
     overflow-x: scroll;
     padding-bottom: 30px;
+    align-items: start;
 
     &::-webkit-scrollbar {
       height: 10px;
@@ -115,29 +116,35 @@
 
     &:hover {
       transform: scale(105%);
-      background-color: $primary-dark-background;
     }
   }
 
-  &__right-button--secondary {
+  &__icon-button {
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
     column-gap: 7px;
     border-radius: 20px;
-    background-color: transparent;
-    box-shadow: none;
-  }
-  &__right-button-icon {
-    height: 14px;
-    width: 15px;
-  }
+    padding: 7px 0px;
 
-  &__right-button-text {
-    color: $primary-color;
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 12px;
+    @include normal-transition;
+
+    &:hover {
+      transform: scale(105%);
+    }
+
+    &__icon {
+      height: 14px;
+      width: 15px;
+    }
+
+    &__text {
+      color: $primary-color;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 12px;
+    }
   }
 }
 
@@ -199,23 +206,25 @@
       padding: 19px 0px;
     }
 
-    &__right-button--secondary {
+    &__icon-button {
       display: flex;
       justify-content: center;
       align-items: center;
       column-gap: 7px;
       border-radius: 20px;
+      padding: 16px 0px;
       background-color: transparent;
-    }
-    &__right-button-icon {
-      height: 26px;
-      width: 30px;
-    }
 
-    &__right-button-text {
-      color: $primary-color;
-      font-size: 16px;
-      line-height: 19px;
+      &__icon {
+        height: 26px;
+        width: 30px;
+      }
+
+      &__text {
+        color: $primary-color;
+        font-size: 16px;
+        line-height: 19px;
+      }
     }
   }
 }

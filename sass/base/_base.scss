@@ -1,8 +1,7 @@
-// basic transition effect 
+// basic transition effect
 
 @mixin normal-transition {
-  transition: transform 0.4s ease-in, background-color 0.4s ease-in,
-    opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 
 @mixin hover-scale($scale-value) {

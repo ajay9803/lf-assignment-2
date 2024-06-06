@@ -1,8 +1,16 @@
 .card-border {
   border: 1px solid #ffffff;
+  transition: all 0.4s ease-in;
+}
+.card-border:hover {
+  border: 1px solid #F14A16;
 }
 .card-border--blue {
   border: 5px solid #35589a;
+  transition: all 0.4s ease-in;
+}
+.card-border--blue:hover {
+  border: 5px solid #F14A16;
 }
 
 .menu-pop-up {
@@ -364,7 +372,7 @@
     display: none;
   }
   .header {
-    padding: 0px 90px;
+    padding: 0px 35px 0px 10px;
   }
   .header__login-button {
     display: block;
@@ -373,7 +381,7 @@
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.04em;
-    transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+    transition: all 0.4s ease-in;
   }
   .header__login-button:hover {
     transform: translateX(8px);
@@ -545,7 +553,7 @@
   letter-spacing: 0.05em;
   color: #ffffff;
   align-self: center;
-  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
   cursor: pointer;
 }
 .footer__button:hover {
@@ -683,9 +691,11 @@
 }
 .share-section__share-button {
   width: 150px;
+  cursor: pointer;
 }
 .share-section__share-button-1 {
   width: 255px;
+  cursor: pointer;
 }
 @media only screen and (min-width: 1024px) {
   .share-section {
@@ -735,6 +745,7 @@
   width: 100%;
   overflow: scroll;
   padding-bottom: 20px;
+  align-items: start;
 }
 .arrivals__item-list::-webkit-scrollbar {
   display: none;
@@ -758,7 +769,7 @@
   width: 325px;
   border-radius: 46px 46px 0px 0px;
   object-fit: cover;
-  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 .arrivals-product__img:hover {
   transform: scale(1.2);
@@ -821,11 +832,10 @@
   box-shadow: 0 0 10px #F14A16;
   border: 3px solid #F14A16;
   cursor: pointer;
-  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 .arrivals-product__button:hover {
   transform: translateX(8px);
-  background-color: black;
   opacity: 0.9;
 }
 .arrivals-product__right-button--secondary {
@@ -950,7 +960,7 @@
   object-fit: cover;
   cursor: pointer;
   overflow: hidden;
-  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 .accessories__image:hover {
   transform: scale(1.2);
@@ -1104,7 +1114,7 @@
   border: 3px solid #F14A16;
   color: #F14A16;
   text-align: center;
-  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
   cursor: pointer;
 }
 .offers-section__button:hover {
@@ -1123,7 +1133,7 @@
   box-shadow: 0 0 10px #F14A16;
   color: #ffffff;
   cursor: pointer;
-  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 .offers-section__button-1:hover {
   transform: scale(105%);
@@ -1263,6 +1273,7 @@
   width: 100%;
   overflow-x: scroll;
   padding-bottom: 30px;
+  align-items: start;
 }
 .trends__item-list::-webkit-scrollbar {
   height: 10px;
@@ -1295,7 +1306,7 @@
   width: 250px;
   border-radius: 50px 50px 0px 0px;
   object-fit: cover;
-  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 .trends-product__img:hover {
   transform: scale(1.25);
@@ -1346,26 +1357,29 @@
   line-height: 12px;
   letter-spacing: 0.04em;
   padding: 7px 0px;
-  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 .trends-product__button:hover {
   transform: scale(105%);
-  background-color: #000000;
 }
-.trends-product__right-button--secondary {
+.trends-product__icon-button {
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
   column-gap: 7px;
   border-radius: 20px;
-  background-color: transparent;
-  box-shadow: none;
+  padding: 7px 0px;
+  transition: all 0.4s ease-in;
 }
-.trends-product__right-button-icon {
+.trends-product__icon-button:hover {
+  transform: scale(105%);
+}
+.trends-product__icon-button__icon {
   height: 14px;
   width: 15px;
 }
-.trends-product__right-button-text {
+.trends-product__icon-button__text {
   color: #F14A16;
   font-size: 10px;
   font-weight: 700;
@@ -1420,19 +1434,20 @@
     line-height: 19px;
     padding: 19px 0px;
   }
-  .trends-product__right-button--secondary {
+  .trends-product__icon-button {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 7px;
     border-radius: 20px;
+    padding: 16px 0px;
     background-color: transparent;
   }
-  .trends-product__right-button-icon {
+  .trends-product__icon-button__icon {
     height: 26px;
     width: 30px;
   }
-  .trends-product__right-button-text {
+  .trends-product__icon-button__text {
     color: #F14A16;
     font-size: 16px;
     line-height: 19px;
@@ -1515,11 +1530,12 @@
   font-weight: 700;
   line-height: 20px;
   padding: 12px 16px;
-  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 .explore__button:hover {
-  background-color: black;
-  opacity: 0.9;
+  background-color: inherit;
+  color: #F14A16;
+  transform: scale(105%);
 }
 
 .icon-button {
@@ -1532,11 +1548,10 @@
   border-radius: 20px;
   background-color: transparent;
   padding: 12px 16px;
-  transition: transform 0.4s ease-in, background-color 0.4s ease-in, opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 .icon-button:hover {
-  background-color: black;
-  opacity: 0.9;
+  transform: scale(105%);
 }
 
 .icon-button__icon {
@@ -1666,10 +1681,13 @@
     padding: 0px 10px;
   }
   .explore__heads {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
+  }
+  .explore__buttons {
+    width: 50%;
   }
   .explore-section {
     width: 100%;
@@ -1677,20 +1695,6 @@
     flex-direction: row;
     justify-content: end;
     padding-right: 24px;
-  }
-  .hero-model__image {
-    display: flex;
-    position: absolute;
-    bottom: 130px;
-    right: 0;
-    width: 50%;
-  }
-  .blurred__bottom {
-    height: 50px;
-    width: 50%;
-    position: absolute;
-    right: 0;
-    bottom: 130px;
   }
   .explore-section {
     width: 100%;
@@ -1716,7 +1720,7 @@
     visibility: hidden;
   }
   .explore {
-    padding: 0px 90px;
+    padding: 0px 10px;
   }
   .explore__heads {
     width: 50%;
@@ -1796,10 +1800,10 @@
     font-weight: 700;
     line-height: 29px;
     letter-spacing: 0.04em;
-    min-width: 200px;
+    min-width: 250px;
   }
   .icon-button {
-    min-width: 200px;
+    min-width: 250px;
   }
   .icon-button__text {
     font-size: 24px;

@@ -1,11 +1,20 @@
-// card borders 
+// card borders
 
 .card {
   &-border {
     border: 1px solid #ffffff;
+    @include normal-transition;
+    &:hover {
+      border: 1px solid $primary-color;
+    }
 
     &--blue {
       border: 5px solid #35589a;
+      @include normal-transition;
+
+      &:hover {
+        border: 5px solid $primary-color;
+      }
     }
   }
 }

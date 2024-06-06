@@ -79,15 +79,16 @@
     flex: 1;
     border-radius: 20px;
     color: #e5e5e5;
-    font-size: 17px;  
+    font-size: 17px;
     font-weight: 700;
     line-height: 20px;
     padding: 12px 16px;
     @include normal-transition;
 
     &:hover {
-      background-color: black;
-      opacity: 0.9;
+      background-color: inherit;
+      color: $primary-color;
+      transform: scale(105%);
     }
   }
 }
@@ -106,8 +107,7 @@
   @include normal-transition;
 
   &:hover {
-    background-color: black;
-    opacity: 0.9;
+    transform: scale(105%);
   }
 }
 
@@ -248,10 +248,14 @@
     padding: 0px 10px;
 
     &__heads {
-      width: 50%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: start;
+    }
+
+    &__buttons {
+      width: 50%;
     }
   }
 
@@ -261,22 +265,6 @@
     flex-direction: row;
     justify-content: end;
     padding-right: 24px;
-  }
-
-  .hero-model__image {
-    display: flex;
-    position: absolute;
-    bottom: 130px;
-    right: 0;
-    width: 50%;
-  }
-
-  .blurred__bottom {
-    height: 50px;
-    width: 50%;
-    position: absolute;
-    right: 0;
-    bottom: 130px;
   }
 
   .explore-section {
@@ -307,7 +295,7 @@
   }
 
   .explore {
-    padding: 0px 90px;
+    padding: 0px 10px;
 
     &__heads {
       width: 50%;
@@ -384,6 +372,7 @@
     bottom: 130px;
     right: 0;
     width: 50%;
+    // height: 100%;
   }
 
   .blurred__bottom {
@@ -399,11 +388,11 @@
     font-weight: 700;
     line-height: 29px;
     letter-spacing: 0.04em;
-    min-width: 200px;
+    min-width: 250px;
   }
 
   .icon-button {
-    min-width: 200px;
+    min-width: 250px;
   }
 
   .icon-button__text {

@@ -46,10 +46,12 @@
 
   &__share-button {
     width: 150px;
+    cursor: pointer;
   }
 
   &__share-button-1 {
     width: 255px;
+    cursor: pointer;
   }
 
   @media only screen and (min-width: 1024px) {
